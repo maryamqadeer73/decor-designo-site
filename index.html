@@ -2,646 +2,803 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Decor Designo Furniture | Beds, Sofas &amp; Dining Sets from Chiniot</title>
-<meta name="description" content="Decor Designo Furniture, Main Lahore Road, Chiniot. Shop beds, sofas, dining sets, cabinets, swings and baby furniture, with customisation on selected designs.">
-<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Decor Designo — Handcrafted Furniture from Chiniot</title>
+<meta name="description" content="Decor Designo Furniture, Main Lahore Road, Chiniot. Beds, sofas, dining sets, cabinets and more.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FurnitureStore","name":"Decor Designo Furniture","url":"https://decordesigno.com/","telephone":"+923217714820","address":{"@type":"PostalAddress","streetAddress":"Main Lahore Road","addressLocality":"Chiniot","addressCountry":"PK"},"sameAs":["https://www.facebook.com/share/15nKgWzMMS/","https://youtube.com/@decordesigno","https://pin.it/5iswjaUyG"]}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FurnitureStore","name":"Decor Designo Furniture","url":"https://decordesigno.com/","telephone":"+923217714820",
- "address":{"@type":"PostalAddress","streetAddress":"Main Lahore Road","addressLocality":"Chiniot","addressCountry":"PK"},
- "sameAs":["https://www.facebook.com/share/15nKgWzMMS/","https://youtube.com/@decordesigno","https://pin.it/5iswjaUyG"]}
-</script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
-/* ===== RESET & BASE ===== */
+/* ─── RESET ─────────────────────────── */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;font-size:16px}
-body{font-family:'Inter',sans-serif;color:#111;background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased}
-img{display:block;max-width:100%;height:auto}
-a{color:inherit;text-decoration:none}
+body{font-family:'Inter',sans-serif;background:#eee9e2;color:#23180c;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
 ul{list-style:none}
 button{cursor:pointer;border:none;background:none;font-family:inherit}
-svg{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+svg{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 
-/* ===== VARIABLES ===== */
+/* ─── TOKENS ─────────────────────────── */
 :root{
-  --gold:#c9a96e;
-  --gold-dark:#a8843d;
-  --navy:#0d1b2a;
-  --dark:#0f0f0f;
-  --charcoal:#1a1a1a;
-  --ivory:#f8f5f0;
-  --border:#e8e0d5;
-  --text:#111;
-  --muted:#666;
-  --r-sm:8px;
-  --r-md:14px;
-  --r-lg:20px;
-  --r-pill:999px;
-  --shadow:0 4px 32px rgba(0,0,0,.08);
-  --shadow-lg:0 12px 48px rgba(0,0,0,.14);
-  --transition:.3s ease;
+  --esp:#23180c;
+  --car:#7a5535;
+  --car2:#a07040;
+  --tau:#9c8b7a;
+  --sand:#e8d9c0;
+  --cream:#f7f3ee;
+  --cream2:#ede8df;
+  --white:#ffffff;
+  --border:#ddd3c0;
+  --muted:#8a7a66;
+  --tr:.25s ease;
 }
 
-/* ===== UTILITY ===== */
-.container{width:100%;max-width:1280px;margin:0 auto;padding:0 24px}
-.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
-.overline{display:block;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
-.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
-.reveal.visible{opacity:1;transform:none}
-
-/* ===== ANNOUNCEMENT BAR ===== */
-.topbar{background:var(--charcoal);color:#fff;font-size:12px;font-weight:400;padding:9px 0;letter-spacing:.02em}
-.topbar .container{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
-.topbar-right{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
-.topbar a{color:#e0d5c5;transition:color var(--transition)}
-.topbar a:hover{color:#fff}
-
-/* ===== NAVBAR ===== */
-.site-header{position:sticky;top:0;z-index:900;padding:10px 0;background:transparent;transition:background var(--transition)}
-.site-header.scrolled{background:rgba(255,255,255,.98);backdrop-filter:blur(12px);box-shadow:0 2px 20px rgba(0,0,0,.06)}
-.header-inner{display:flex;align-items:center;gap:20px}
-.nav-pill{display:flex;align-items:center;gap:0;flex:1;background:#fff;border-radius:var(--r-pill);box-shadow:0 2px 24px rgba(0,0,0,.10);padding:10px 20px;border:1px solid var(--border)}
-.logo{display:flex;flex-direction:column;line-height:1.1;flex-shrink:0}
-.logo b{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--text);letter-spacing:-.01em}
-.logo small{font-size:10px;font-weight:400;color:var(--muted);letter-spacing:.04em;text-transform:uppercase}
-.main-nav{display:flex;align-items:center;gap:2px;margin-left:auto;margin-right:8px}
-.main-nav a{font-size:13px;font-weight:500;color:#333;padding:7px 12px;border-radius:var(--r-pill);transition:background var(--transition),color var(--transition);white-space:nowrap}
-.main-nav a:hover,.main-nav a[aria-current]{background:var(--ivory);color:var(--text)}
-.header-tools{display:flex;align-items:center;gap:4px;margin-left:8px}
-.icon-btn{display:flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:var(--r-pill);color:#333;transition:background var(--transition),color var(--transition)}
-.icon-btn:hover{background:var(--ivory);color:var(--text)}
-.icon-btn svg{width:18px;height:18px}
-.menu-btn{display:none}
-
-/* ===== SEARCH BAR ===== */
-.search-bar{background:#fff;border-top:1px solid var(--border);padding:12px 0;display:none}
-.search-bar.open{display:block}
-.search-bar form{display:flex;gap:10px;align-items:center}
-.search-bar input{flex:1;padding:11px 18px;border:1.5px solid var(--border);border-radius:var(--r-pill);font-size:14px;outline:none;font-family:'Inter',sans-serif}
-.search-bar input:focus{border-color:var(--gold)}
-.btn-search-submit{background:var(--charcoal);color:#fff;padding:10px 22px;border-radius:var(--r-pill);font-size:13px;font-weight:500;transition:background var(--transition)}
-.btn-search-submit:hover{background:var(--gold)}
-
-/* ===== DRAWER ===== */
-.drawer-bg{display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:1000;opacity:0;transition:opacity .3s}
-.drawer-bg.active{display:block;opacity:1}
-.drawer{position:fixed;top:0;left:0;width:300px;max-width:90vw;height:100%;background:#fff;z-index:1001;transform:translateX(-105%);transition:transform .35s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column;overflow-y:auto}
-.drawer.open{transform:none}
-.drawer-head{display:flex;align-items:center;justify-content:space-between;padding:20px 20px 16px;border-bottom:1px solid var(--border)}
-.drawer nav{display:flex;flex-direction:column;padding:16px 12px}
-.drawer nav a{padding:12px 16px;font-size:15px;font-weight:500;border-radius:var(--r-md);color:#222;transition:background var(--transition)}
-.drawer nav a:hover{background:var(--ivory)}
-.drawer-foot{margin-top:auto;padding:20px;font-size:13px;color:var(--muted);border-top:1px solid var(--border)}
-.drawer-foot strong{display:block;color:var(--text);margin-bottom:4px}
-
-/* ===== HERO ===== */
-.hero{position:relative;min-height:92vh;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#1a1a1a}
-.hero-bg{position:absolute;inset:0;background-image:url('https://decordesigno.com/wp-content/uploads/2026/04/Luxury-Royal-Sofa-Set-Design-in-Pakistan-Majestic-Chinioti-Modern-Sofa-2025decor-designo.png');background-size:cover;background-position:center 30%;transform:scale(1.03);transition:transform 8s ease}
-.hero-bg.loaded{transform:scale(1)}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.2) 0%,rgba(0,0,0,.55) 60%,rgba(0,0,0,.75) 100%)}
-.hero-content{position:relative;z-index:2;text-align:center;color:#fff;padding:40px 20px;max-width:820px}
-.hero-eyebrow{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);background:rgba(201,169,110,.12);border:1px solid rgba(201,169,110,.35);padding:6px 18px;border-radius:var(--r-pill);margin-bottom:24px}
-.hero h1{font-family:'Playfair Display',serif;font-size:clamp(40px,6vw,80px);font-weight:700;line-height:1.1;letter-spacing:-.02em;margin-bottom:20px;text-shadow:0 2px 24px rgba(0,0,0,.3)}
-.hero h1 em{font-style:italic;color:#e8d9bc}
-.hero-sub{font-size:clamp(15px,2vw,18px);font-weight:300;color:rgba(255,255,255,.82);max-width:560px;margin:0 auto 36px;line-height:1.7}
-.hero-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 30px;border-radius:var(--r-pill);font-size:14px;font-weight:500;font-family:'Inter',sans-serif;transition:all var(--transition);cursor:pointer;white-space:nowrap;letter-spacing:.01em}
-.btn-primary{background:var(--charcoal);color:#fff}
-.btn-primary:hover{background:#333}
-.btn-gold{background:var(--gold);color:#fff}
-.btn-gold:hover{background:var(--gold-dark)}
-.btn-outline-light{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.6)}
-.btn-outline-light:hover{background:rgba(255,255,255,.12);border-color:#fff}
-.btn-outline{background:transparent;color:var(--text);border:1.5px solid #ccc}
-.btn-outline:hover{border-color:var(--text);background:var(--ivory)}
-.btn-dark{background:var(--charcoal);color:#fff}
-.btn-dark:hover{background:#2a2a2a}
-.hero-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:3;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.15);border:1.5px solid rgba(255,255,255,.3);display:flex;align-items:center;justify-content:center;color:#fff;transition:background var(--transition)}
-.hero-arrow:hover{background:rgba(255,255,255,.25)}
-.hero-arrow.left{left:24px}
-.hero-arrow.right{right:24px}
-.hero-arrow svg{width:18px;height:18px}
-.hero-stats{display:flex;justify-content:center;gap:48px;margin-top:48px;flex-wrap:wrap}
-.hero-stat{text-align:center;color:rgba(255,255,255,.9)}
-.hero-stat b{display:block;font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#fff}
-.hero-stat span{font-size:12px;font-weight:400;color:rgba(255,255,255,.65);letter-spacing:.05em;text-transform:uppercase}
-
-/* ===== FEATURE STRIP ===== */
-.feature-strip{background:var(--dark);padding:22px 0}
-.feature-strip .container{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
-.feature-item{display:flex;align-items:center;gap:12px;padding:4px 20px;border-right:1px solid rgba(255,255,255,.08)}
-.feature-item:last-child{border-right:none}
-.feature-item svg{width:22px;height:22px;stroke:var(--gold);flex-shrink:0}
-.feature-item-text strong{display:block;font-size:13px;font-weight:600;color:#fff;margin-bottom:2px}
-.feature-item-text span{font-size:11px;color:rgba(255,255,255,.45);font-weight:300}
-
-/* ===== SECTION BASE ===== */
-.section{padding:80px 0}
-.section-ivory{background:var(--ivory)}
-.section-dark{background:var(--dark)}
-.section-navy{background:var(--navy)}
-.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:48px}
-.section-head h2{font-family:'Playfair Display',serif;font-size:clamp(28px,3.5vw,44px);font-weight:700;color:var(--text);line-height:1.2;margin-top:8px}
-.section-head p{font-size:15px;color:var(--muted);margin-top:10px;line-height:1.7;max-width:500px}
-.text-link{font-size:13px;font-weight:500;color:var(--muted);border-bottom:1px solid var(--border);padding-bottom:2px;white-space:nowrap;transition:color var(--transition),border-color var(--transition)}
-.text-link:hover{color:var(--text);border-color:var(--text)}
-.on-dark .section-head h2,.on-dark h2{color:#fff}
-.on-dark .overline{color:var(--gold)}
-.on-dark p{color:rgba(255,255,255,.6)}
-.on-dark .text-link{color:rgba(255,255,255,.5);border-color:rgba(255,255,255,.2)}
-.on-dark .text-link:hover{color:#fff;border-color:#fff}
-
-/* ===== CATEGORY TILES ===== */
-.cat-row{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
-.cat-tile{position:relative;border-radius:var(--r-lg);overflow:hidden;aspect-ratio:3/4;cursor:pointer;display:block;background:#1a1a1a}
-.cat-tile.c1{background:linear-gradient(145deg,#2c1a0e,#5c3520)}
-.cat-tile.c2{background:linear-gradient(145deg,#0d1e32,#1a3a5c)}
-.cat-tile.c3{background:linear-gradient(145deg,#1a2618,#2e4e24)}
-.cat-tile.c4{background:linear-gradient(145deg,#28200c,#52400a)}
-.cat-tile.c5{background:linear-gradient(145deg,#1c1030,#3c2060)}
-.cat-tile.c6{background:linear-gradient(145deg,#1a0c0c,#4a1818)}
-.cat-tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
-.cat-tile:hover img{transform:scale(1.06)}
-.cat-tile-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.85) 0%,rgba(0,0,0,.25) 50%,rgba(0,0,0,.05) 100%);transition:opacity var(--transition)}
-.cat-tile:hover .cat-tile-overlay{opacity:1}
-.cat-tile-info{position:absolute;bottom:0;left:0;right:0;padding:20px 16px}
-.cat-tile-info strong{display:block;font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:#fff;margin-bottom:5px;line-height:1.2}
-.cat-tile-info span{font-size:10px;color:rgba(255,255,255,.55);font-weight:400;letter-spacing:.1em;text-transform:uppercase}
-.cat-arrow{position:absolute;top:14px;right:14px;width:28px;height:28px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;opacity:0;transform:scale(.6);transition:all .3s ease}
-.cat-tile:hover .cat-arrow{opacity:1;transform:scale(1)}
-.cat-arrow svg{width:12px;height:12px;stroke:#fff;stroke-width:2.5}
-
-
-/* ===== PROMO SPLIT ===== */
-.promo-split{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
-.promo-copy .overline{margin-bottom:12px}
-.promo-copy h2{font-family:'Playfair Display',serif;font-size:clamp(28px,3vw,42px);font-weight:700;color:var(--text);line-height:1.25;margin-bottom:18px}
-.promo-copy p{font-size:15px;color:var(--muted);line-height:1.8;margin-bottom:32px}
-.promo-img{border-radius:var(--r-lg);overflow:hidden;aspect-ratio:4/5;box-shadow:var(--shadow-lg)}
-.promo-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
-.promo-img:hover img{transform:scale(1.03)}
-
-/* ===== PRODUCTS GRID ===== */
-.product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
-.product-card{background:#fff;border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--border);transition:box-shadow var(--transition),transform var(--transition)}
-.product-card:hover{box-shadow:var(--shadow);transform:translateY(-4px)}
-.product-thumb{position:relative;aspect-ratio:1;overflow:hidden;background:var(--ivory)}
-.product-thumb img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
-.product-card:hover .product-thumb img{transform:scale(1.06)}
-.product-badge{position:absolute;top:12px;left:12px;padding:4px 10px;border-radius:var(--r-pill);font-size:10px;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
-.badge-sale{background:#e63946;color:#fff}
-.badge-out{background:rgba(0,0,0,.55);color:#fff}
-.product-info{padding:16px 18px 20px}
-.product-cat{font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
-.product-name{font-family:'Playfair Display',serif;font-size:15px;font-weight:600;color:var(--text);line-height:1.4;margin-bottom:10px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.product-price{font-size:15px;font-weight:600;color:var(--text)}
-.product-price .old{font-size:12px;color:var(--muted);text-decoration:line-through;margin-left:6px;font-weight:400}
-.product-price.contact{font-size:13px;font-weight:400;color:var(--muted)}
-.product-link{display:block;text-align:center;margin:14px 18px 0;padding:9px;border:1.5px solid var(--border);border-radius:var(--r-pill);font-size:12px;font-weight:500;color:var(--text);transition:all var(--transition)}
-.product-link:hover{background:var(--charcoal);color:#fff;border-color:var(--charcoal)}
-.on-dark .product-card{background:#1c1c1c;border-color:#2a2a2a}
-.on-dark .product-name{color:#f0ebe4}
-.on-dark .product-price{color:#f0ebe4}
-.on-dark .product-link{border-color:#333;color:#f0ebe4}
-.on-dark .product-link:hover{background:var(--gold);border-color:var(--gold);color:#fff}
-.on-dark .product-thumb{background:#242424}
-
-/* ===== ABOUT ===== */
-.about{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
-.about-media{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto;gap:12px}
-.about-media .big{grid-column:1 / -1;border-radius:var(--r-lg);overflow:hidden;aspect-ratio:16/9}
-.about-media .big img,.about-media .sm img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
-.about-media .big:hover img,.about-media .sm:hover img{transform:scale(1.04)}
-.about-media .sm{border-radius:var(--r-md);overflow:hidden;aspect-ratio:1}
-.about-copy .overline{margin-bottom:12px}
-.about-copy h2{font-family:'Playfair Display',serif;font-size:clamp(26px,2.8vw,40px);font-weight:700;color:var(--text);line-height:1.25;margin-bottom:16px}
-.about-copy>p{font-size:15px;color:var(--muted);line-height:1.8;margin-bottom:32px}
-.features{display:flex;flex-direction:column;gap:22px;margin-bottom:32px}
-.feature-row{display:flex;align-items:flex-start;gap:16px}
-.feature-row svg{width:28px;height:28px;stroke:var(--gold);flex-shrink:0;margin-top:2px}
-.feature-row h3{font-size:14px;font-weight:600;color:var(--text);margin-bottom:4px}
-.feature-row p{font-size:13px;color:var(--muted);line-height:1.6}
-
-/* ===== CONTACT / CTA ===== */
-.section-cta{background:#0a0a0a;padding:100px 0;position:relative;overflow:hidden}
-.section-cta::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 20% 50%,rgba(201,169,110,.08) 0%,transparent 70%)}
-.cta-inner{display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:center;position:relative;z-index:1}
-.cta-copy .overline{color:var(--gold);margin-bottom:16px}
-.cta-copy h2{font-family:'Playfair Display',serif;font-size:clamp(32px,3.5vw,52px);font-weight:700;color:#fff;line-height:1.15;margin-bottom:20px;letter-spacing:-.02em}
-.cta-copy p{font-size:16px;color:rgba(255,255,255,.55);line-height:1.8;margin-bottom:36px;max-width:460px}
-.cta-actions{display:flex;gap:14px;flex-wrap:wrap}
-.btn-wa{display:inline-flex;align-items:center;gap:10px;padding:15px 32px;border-radius:var(--r-pill);background:var(--gold);color:#fff;font-size:15px;font-weight:600;letter-spacing:.01em;transition:all .3s ease;border:2px solid var(--gold)}
-.btn-wa:hover{background:var(--gold-dark);border-color:var(--gold-dark);transform:translateY(-2px);box-shadow:0 8px 28px rgba(201,169,110,.35)}
-.btn-wa svg{width:18px;height:18px;fill:#fff;stroke:none;flex-shrink:0}
-.btn-ghost{display:inline-flex;align-items:center;gap:8px;padding:13px 28px;border-radius:var(--r-pill);background:transparent;color:rgba(255,255,255,.75);font-size:14px;font-weight:500;border:1.5px solid rgba(255,255,255,.2);transition:all .3s ease}
-.btn-ghost:hover{border-color:rgba(255,255,255,.6);color:#fff;background:rgba(255,255,255,.05)}
-.cta-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:24px;overflow:hidden}
-.cta-card-head{background:var(--gold);padding:20px 28px}
-.cta-card-head h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:#fff}
-.cta-card-head p{font-size:12px;color:rgba(255,255,255,.75);margin-top:3px;font-weight:400}
-.cta-card-body{padding:8px 0}
-.cta-row{display:flex;align-items:center;gap:18px;padding:16px 28px;border-bottom:1px solid rgba(255,255,255,.05)}
-.cta-row:last-child{border-bottom:none}
-.cta-row-icon{width:36px;height:36px;border-radius:10px;background:rgba(201,169,110,.12);display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.cta-row-icon svg{width:16px;height:16px;stroke:var(--gold)}
-.cta-row-label{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.35);margin-bottom:3px}
-.cta-row-val{font-size:14px;color:rgba(255,255,255,.85);font-weight:500}
-.cta-row-val a{color:var(--gold);transition:color .3s}
-.cta-row-val a:hover{color:#fff}
-
-/* ===== FOOTER ===== */
-.site-footer{background:#080808}
-.footer-brand{background:#0f0f0f;border-bottom:1px solid rgba(255,255,255,.05);padding:48px 0}
-.footer-brand .container{display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap}
-.footer-brand-left .logo b{font-family:'Playfair Display',serif;font-size:24px;color:#fff}
-.footer-brand-left .logo small{font-size:11px;color:rgba(255,255,255,.35);letter-spacing:.08em;text-transform:uppercase;display:block;margin-top:3px}
-.footer-brand-left p{margin-top:12px;font-size:13px;color:rgba(255,255,255,.4);line-height:1.7;max-width:320px}
-.footer-brand-socials{display:flex;gap:10px;margin-top:20px}
-.footer-brand-socials a{width:38px;height:38px;border-radius:10px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.06);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.4);transition:all .3s ease}
-.footer-brand-socials a:hover{background:var(--gold);border-color:var(--gold);color:#fff;transform:translateY(-2px)}
-.footer-brand-socials svg{width:15px;height:15px}
-.footer-brand-right{display:flex;gap:12px;flex-wrap:wrap}
-.footer-brand-right a{display:inline-flex;align-items:center;gap:6px;padding:10px 20px;border-radius:var(--r-pill);font-size:13px;font-weight:500;transition:all .3s ease}
-.footer-link-wa{background:var(--gold);color:#fff}
-.footer-link-wa:hover{background:var(--gold-dark)}
-.footer-link-shop{background:rgba(255,255,255,.06);color:rgba(255,255,255,.7);border:1px solid rgba(255,255,255,.08)}
-.footer-link-shop:hover{background:rgba(255,255,255,.12);color:#fff}
-.footer-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;padding:48px 0 40px}
-.footer-col h3{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:#fff;margin-bottom:4px;letter-spacing:-.01em}
-.footer-col-line{width:24px;height:2px;background:var(--gold);border-radius:2px;margin-bottom:20px}
-.footer-col ul li{margin-bottom:11px}
-.footer-col ul a{font-size:13px;color:rgba(255,255,255,.4);transition:color .3s;display:inline-flex;align-items:center;gap:6px}
-.footer-col ul a:hover{color:#fff}
-.footer-col ul a::before{content:'→';font-size:11px;color:var(--gold);opacity:0;transform:translateX(-4px);transition:all .3s;display:inline-block}
-.footer-col ul a:hover::before{opacity:1;transform:none}
-.footer-col-address{font-size:13px;color:rgba(255,255,255,.4);line-height:1.8}
-.footer-col-address strong{display:block;color:rgba(255,255,255,.7);margin-bottom:4px}
-.footer-bottom-bar{background:#050505;border-top:1px solid rgba(255,255,255,.04);padding:18px 0}
-.footer-bottom-bar .container{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,.2);flex-wrap:wrap;gap:8px}
-.footer-bottom-bar span:first-child b{color:var(--gold)}
-
-
-/* ===== WA FLOAT ===== */
-.wa-float{position:fixed;bottom:26px;right:26px;z-index:800;width:52px;height:52px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(37,211,102,.4);transition:transform var(--transition),box-shadow var(--transition)}
-.wa-float:hover{transform:scale(1.1);box-shadow:0 6px 24px rgba(37,211,102,.55)}
-.wa-float svg{width:28px;height:28px;fill:#fff;stroke:none}
-
-/* ===== BESTSELLER HEADING ===== */
-.bestsellers-head{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:36px}
-.bestsellers-head h2{font-family:'Playfair Display',serif;font-size:clamp(26px,3vw,40px);font-weight:700;color:#fff}
-.bestsellers-head p{font-size:13px;color:rgba(255,255,255,.45);margin-top:6px}
-.bestsellers-head a{font-size:13px;font-weight:500;color:var(--gold);border:1px solid rgba(201,169,110,.35);padding:8px 20px;border-radius:var(--r-pill);transition:all var(--transition);white-space:nowrap}
-.bestsellers-head a:hover{background:var(--gold);color:#fff}
-
-/* ===== SKIP LINK ===== */
-.skip{position:absolute;left:-9999px;top:0;z-index:9999;padding:8px 16px;background:var(--gold);color:#fff;font-size:13px;border-radius:0 0 8px 0}
+/* ─── UTILITY ─────────────────────────── */
+.container{max-width:1300px;margin:0 auto;padding:0 32px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+.skip{position:absolute;left:-9999px;top:0;z-index:9999;padding:8px 16px;background:var(--car);color:#fff;border-radius:0 0 8px 0}
 .skip:focus{left:0}
 
-/* ===== MOBILE ===== */
-@media(max-width:1100px){
-  .cat-row{grid-template-columns:repeat(3,1fr)}
-}
-@media(max-width:900px){
-  .promo-split{grid-template-columns:1fr;gap:36px}
-  .promo-img{order:-1;aspect-ratio:16/9}
-  .about{grid-template-columns:1fr;gap:36px}
-  .cta-inner{grid-template-columns:1fr;gap:36px}
-  .footer-brand .container{flex-direction:column;align-items:flex-start}
-  .footer-cols{grid-template-columns:1fr 1fr;gap:28px}
-  .product-grid{grid-template-columns:repeat(2,1fr)}
-  .feature-strip .container{grid-template-columns:repeat(2,1fr);gap:12px}
-  .feature-item{border-right:none;border-bottom:1px solid rgba(255,255,255,.06);padding:10px 16px}
-  .feature-item:nth-child(3),.feature-item:nth-child(4){border-bottom:none}
-}
-@media(max-width:680px){
-  .main-nav{display:none}
-  .menu-btn{display:flex}
-  .nav-pill{padding:8px 14px}
-  .hero{min-height:88vh}
-  .hero-stats{gap:20px;flex-wrap:wrap}
-  .hero-stat b{font-size:22px}
-  .section{padding:56px 0}
-  .section-cta{padding:64px 0}
-  .section-head{flex-direction:column;align-items:flex-start;gap:12px;margin-bottom:32px}
-  .cat-row{grid-template-columns:repeat(2,1fr);gap:10px}
-  .cat-tile{aspect-ratio:3/4}
-  .product-grid{grid-template-columns:repeat(2,1fr);gap:12px}
-  .product-info{padding:12px 14px 16px}
-  .product-link{margin:10px 14px 0}
-  .footer-cols{grid-template-columns:1fr;gap:24px}
-  .footer-brand-right{flex-direction:column;align-items:flex-start}
-  .bestsellers-head{flex-direction:column;align-items:flex-start;gap:12px}
-  .hero-arrow{display:none}
-  .hero-stats{gap:24px;margin-top:32px;justify-content:center}
-  .cta-copy h2{font-size:28px}
-}
-@media(max-width:420px){
-  .cat-row{grid-template-columns:repeat(2,1fr)}
-  .feature-strip .container{grid-template-columns:1fr 1fr}
-  .about-media .big{aspect-ratio:4/3}
+/* ─── TOPBAR ─────────────────────────── */
+.topbar{background:var(--esp);color:rgba(232,217,192,.6);font-size:11.5px;padding:8px 0}
+.topbar .container{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+.topbar a{color:var(--sand);transition:color var(--tr)}
+.topbar a:hover{color:#fff}
+.topbar-r{display:flex;gap:22px}
 
+/* ─────────────────────────────────────────
+   HERO CARD WRAPPER  (the whole rounded box)
+   ───────────────────────────────────────── */
+.hero-wrap{
+  padding: 20px;
+  background: #eee9e2;
+}
+.hero-card{
+  position: relative;
+  border-radius: 28px;
+  overflow: hidden;
+  min-height: 88vh;
+  display: flex;
+  flex-direction: column;
+  /* white border effect */
+  box-shadow: 0 0 0 6px rgba(255,255,255,.85), 0 24px 80px rgba(35,24,12,.25);
+}
+
+/* ── Background image + dark overlay ── */
+.hero-bg{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+.hero-bg-fallback{
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(145deg, #2a1e0e 0%, #1a120a 60%, #0e0b06 100%);
+  z-index: 0;
+}
+.hero-overlay{
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(10,7,3,.55) 0%,
+    rgba(10,7,3,.30) 40%,
+    rgba(10,7,3,.55) 100%
+  );
+  z-index: 1;
+}
+
+/* ── Navbar inside hero ── */
+.hero-nav{
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  padding: 22px 36px;
+  gap: 20px;
+}
+.hero-logo{
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 900;
+  color: #fff;
+  line-height: 1;
+  flex-shrink: 0;
+  background: rgba(255,255,255,.12);
+  padding: 10px 18px;
+  border-radius: 14px;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,.18);
+  letter-spacing: -.01em;
+}
+.hero-logo small{
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: 8.5px;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.55);
+  margin-top: 2px;
+}
+.hero-nav-links{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: auto;
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: 100px;
+  padding: 6px 8px;
+  backdrop-filter: blur(8px);
+}
+.hero-nav-links a{
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(255,255,255,.82);
+  padding: 7px 16px;
+  border-radius: 100px;
+  transition: background var(--tr), color var(--tr);
+  white-space: nowrap;
+}
+.hero-nav-links a:hover,
+.hero-nav-links a.active{
+  background: rgba(255,255,255,.18);
+  color: #fff;
+}
+.hero-nav-right{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.hero-connect-btn{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 100px;
+  background: #fff;
+  color: var(--esp);
+  font-size: 13px;
+  font-weight: 700;
+  transition: background var(--tr), color var(--tr);
+  white-space: nowrap;
+}
+.hero-connect-btn:hover{background: var(--sand)}
+.hero-arrow-btn{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.15);
+  border: 1px solid rgba(255,255,255,.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  backdrop-filter: blur(6px);
+  transition: background var(--tr);
+}
+.hero-arrow-btn:hover{background: rgba(255,255,255,.28)}
+.hero-arrow-btn svg{width: 16px; height: 16px; stroke: #fff}
+.hero-menu-btn{
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.15);
+  border: 1px solid rgba(255,255,255,.2);
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.hero-menu-btn svg{width: 18px; height: 18px; stroke: #fff}
+
+/* ── Hero center content ── */
+.hero-body{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 32px 60px;
+  position: relative;
+  z-index: 5;
+}
+.hero-title{
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(42px, 6vw, 86px);
+  font-weight: 900;
+  color: #fff;
+  line-height: 1.06;
+  letter-spacing: -.03em;
+  max-width: 780px;
+  margin: 0 auto 18px;
+}
+.hero-title em{font-style: italic; color: var(--sand)}
+.hero-sub{
+  font-size: 15px;
+  color: rgba(255,255,255,.62);
+  max-width: 420px;
+  margin: 0 auto 32px;
+  line-height: 1.75;
+  font-weight: 400;
+}
+.hero-cta{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 30px;
+  border-radius: 100px;
+  background: var(--car);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  transition: background var(--tr), transform var(--tr);
+  box-shadow: 0 6px 28px rgba(122,85,53,.45);
+}
+.hero-cta:hover{background: #5a3d20; transform: translateY(-2px)}
+.hero-cta-icon{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.hero-cta-icon svg{width: 14px; height: 14px; stroke: #fff}
+
+/* ── Bottom scroll indicator ── */
+.hero-scroll{
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  color: rgba(255,255,255,.4);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.hero-scroll-line{
+  width: 1px;
+  height: 36px;
+  background: linear-gradient(to bottom, rgba(255,255,255,.5), transparent);
+  animation: scrollLine 1.8s ease-in-out infinite;
+}
+@keyframes scrollLine{
+  0%,100%{opacity:.3; transform: scaleY(1)}
+  50%{opacity:.9; transform: scaleY(1.15)}
+}
+
+/* ─── FEATURE STRIP ─────────────────── */
+.feat-strip{background:var(--esp);padding:0;margin:0 20px;border-radius:0 0 18px 18px;overflow:hidden}
+.feat-strip-inner{display:grid;grid-template-columns:repeat(4,1fr)}
+.fsi{display:flex;align-items:center;gap:14px;padding:22px 26px;border-right:1px solid rgba(232,217,192,.1)}
+.fsi:last-child{border-right:none}
+.fsi svg{width:22px;height:22px;stroke:var(--sand);opacity:.75;flex-shrink:0}
+.fsi strong{display:block;font-size:13px;font-weight:700;color:#fff;margin-bottom:2px}
+.fsi span{font-size:11px;color:rgba(232,217,192,.4)}
+
+/* ─── SECTION BASE ─────────────────── */
+.section{padding:90px 0;background:var(--white)}
+.section-cream{background:var(--cream)}
+.section-esp{background:var(--esp)}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:46px;gap:20px}
+.sec-tag{font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--car);display:block;margin-bottom:10px}
+.sec-title{font-family:'Playfair Display',serif;font-size:clamp(28px,3.2vw,44px);font-weight:700;color:var(--esp);line-height:1.1}
+.sec-title-w{color:#fff}
+.sec-right{display:flex;align-items:center;gap:12px;flex-shrink:0}
+.view-all{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--car);border-bottom:2px solid var(--car);padding-bottom:2px;transition:color var(--tr),border-color var(--tr)}
+.view-all:hover{color:var(--esp);border-color:var(--esp)}
+.view-all svg{width:12px;height:12px}
+.view-all-w{color:var(--sand);border-color:var(--sand)}
+.view-all-w:hover{color:#fff;border-color:#fff}
+.sec-arrows{display:flex;gap:8px}
+.sec-arr{width:38px;height:38px;border-radius:50%;border:1.5px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--esp);background:#fff;transition:all var(--tr)}
+.sec-arr:hover{background:var(--car);border-color:var(--car);color:#fff}
+.sec-arr svg{width:14px;height:14px}
+
+/* ─── PRODUCT GRID ─────────────────── */
+.prod-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.prod-card{background:var(--cream);border-radius:20px;overflow:hidden;transition:box-shadow var(--tr),transform var(--tr);position:relative;display:block;color:inherit}
+.prod-card:hover{box-shadow:0 12px 44px rgba(35,24,12,.13);transform:translateY(-4px)}
+.prod-img-wrap{position:relative;aspect-ratio:1;overflow:hidden;background:var(--cream2);display:flex;align-items:center;justify-content:center;padding:22px}
+.prod-img-wrap img{width:100%;height:100%;object-fit:contain;transition:transform .5s ease}
+.prod-card:hover .prod-img-wrap img{transform:scale(1.06)}
+.prod-heart{position:absolute;top:12px;right:12px;width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.9);display:flex;align-items:center;justify-content:center;color:var(--tau);transition:color var(--tr);z-index:2}
+.prod-heart:hover{color:#d44}
+.prod-heart svg{width:14px;height:14px}
+.prod-badge{position:absolute;top:12px;left:12px;padding:4px 10px;border-radius:100px;font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;z-index:2}
+.badge-sale{background:#c0392b;color:#fff}
+.badge-new{background:var(--car);color:#fff}
+.prod-indicator{position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--car);transform:scaleX(0);transform-origin:left;transition:transform .3s ease}
+.prod-card:hover .prod-indicator{transform:scaleX(1)}
+.prod-info{padding:14px 18px 20px}
+.prod-name{font-size:13.5px;font-weight:700;color:var(--esp);line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-bottom:6px}
+.prod-price{font-size:14px;color:var(--car);font-weight:700}
+.prod-price .old{font-size:11.5px;color:var(--tau);text-decoration:line-through;margin-left:5px;font-weight:400}
+.prod-price.contact{font-size:12px;color:var(--tau);font-weight:500}
+
+/* ─── CATEGORIES MOSAIC ─────────────── */
+.cat-mosaic{display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:310px 310px;gap:14px}
+.cat-c1{grid-row:1/3;border-radius:24px;overflow:hidden;position:relative}
+.cat-c2{border-radius:24px;overflow:hidden;background:var(--car);display:flex;flex-direction:column;justify-content:space-between;padding:38px 34px;position:relative}
+.cat-c3,.cat-c4{border-radius:24px;overflow:hidden;position:relative}
+.cat-c1,.cat-c3,.cat-c4{background:var(--cream2)}
+.cat-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .7s ease}
+.cat-c1:hover .cat-img,.cat-c3:hover .cat-img,.cat-c4:hover .cat-img{transform:scale(1.07)}
+.cat-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(35,24,12,.72) 0%,transparent 55%);z-index:1;pointer-events:none}
+.cat-lbl{position:absolute;bottom:22px;left:22px;z-index:2}
+.cat-lbl-n{font-size:9px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.65);margin-bottom:5px}
+.cat-lbl-name{font-family:'Playfair Display',serif;font-size:21px;font-weight:700;color:#fff}
+.cat-lbl-count{font-size:11px;color:rgba(255,255,255,.58);margin-top:2px}
+.cat-c1 .cat-fb{position:absolute;inset:0;background:linear-gradient(160deg,#c8b090,#9a7050)}
+.cat-c3 .cat-fb{position:absolute;inset:0;background:linear-gradient(160deg,#d4c0a0,#b09060)}
+.cat-c4 .cat-fb{position:absolute;inset:0;background:linear-gradient(160deg,#ddd0b4,#c0a478)}
+.cat-c2-over{font-size:9px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:10px}
+.cat-c2-title{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:#fff;line-height:1.22;margin-bottom:12px}
+.cat-c2-desc{font-size:13px;color:rgba(255,255,255,.52);line-height:1.78;flex-grow:1;margin-bottom:26px}
+.cat-c2-link{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:rgba(255,255,255,.9);border-bottom:2px solid rgba(255,255,255,.32);padding-bottom:3px;transition:all var(--tr)}
+.cat-c2-link:hover{color:#fff;border-color:#fff}
+.cat-c2-link svg{width:13px;height:13px}
+.cat-more{display:flex;justify-content:flex-end;margin-top:18px}
+
+/* ─── ABOUT ─────────────────────────── */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.about-imgs{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.about-imgs .big{grid-column:1/-1;border-radius:20px;overflow:hidden;aspect-ratio:16/9;background:var(--sand)}
+.about-imgs .sm{border-radius:16px;overflow:hidden;aspect-ratio:1;background:var(--cream2)}
+.about-imgs img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease;display:block}
+.about-imgs .big:hover img,.about-imgs .sm:hover img{transform:scale(1.04)}
+.about-copy .over-tag{font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--car);display:block;margin-bottom:14px}
+.about-copy h2{font-family:'Playfair Display',serif;font-size:clamp(26px,3vw,42px);font-weight:700;color:var(--esp);line-height:1.18;margin-bottom:18px}
+.about-copy>p{font-size:14.5px;color:var(--muted);line-height:1.85;margin-bottom:32px}
+.feat-list{display:flex;flex-direction:column;gap:22px;margin-bottom:36px}
+.feat-item{display:flex;gap:16px;align-items:flex-start}
+.feat-icon{width:44px;height:44px;border-radius:13px;background:var(--cream);border:1.5px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.feat-icon svg{width:20px;height:20px;stroke:var(--car)}
+.feat-item h3{font-size:14px;font-weight:700;color:var(--esp);margin-bottom:3px}
+.feat-item p{font-size:13px;color:var(--muted);line-height:1.6}
+.btn-dark{display:inline-flex;align-items:center;gap:9px;padding:14px 30px;border-radius:100px;background:var(--esp);color:#fff;font-size:13.5px;font-weight:600;transition:background var(--tr)}
+.btn-dark:hover{background:var(--car)}
+
+/* ─── CTA SECTION ─────────────────── */
+.section-cta{background:var(--esp);padding:100px 0}
+.cta-wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:72px;align-items:center}
+.cta-copy .over-tag{color:rgba(232,217,192,.45);display:block;font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin-bottom:16px}
+.cta-copy h2{font-family:'Playfair Display',serif;font-size:clamp(28px,3.4vw,52px);font-weight:700;color:#fff;line-height:1.12;margin-bottom:16px;letter-spacing:-.02em}
+.cta-copy p{font-size:15px;color:rgba(232,217,192,.5);line-height:1.85;margin-bottom:36px;max-width:420px}
+.cta-btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn-wa{display:inline-flex;align-items:center;gap:10px;padding:14px 30px;border-radius:100px;background:var(--sand);color:var(--esp);font-size:14px;font-weight:700;transition:all var(--tr)}
+.btn-wa:hover{background:#fff}
+.btn-wa svg{width:18px;height:18px;fill:var(--esp);stroke:none;flex-shrink:0}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;padding:13px 28px;border-radius:100px;border:2px solid rgba(232,217,192,.25);color:rgba(232,217,192,.8);font-size:13.5px;font-weight:600;transition:all var(--tr)}
+.btn-ghost:hover{border-color:rgba(232,217,192,.7);color:#fff}
+.cta-card{border-radius:24px;overflow:hidden}
+.cta-card-head{background:var(--car);padding:26px 30px}
+.cta-card-head h3{font-family:'Playfair Display',serif;font-size:19px;font-weight:700;color:#fff;margin-bottom:4px}
+.cta-card-head p{font-size:12.5px;color:rgba(255,255,255,.6)}
+.cta-rows{background:rgba(255,255,255,.05);border:1px solid rgba(232,217,192,.08);border-top:none;border-radius:0 0 24px 24px}
+.cta-row{display:flex;align-items:center;gap:16px;padding:18px 26px;border-bottom:1px solid rgba(232,217,192,.06)}
+.cta-row:last-child{border-bottom:none}
+.cta-row-ico{width:38px;height:38px;border-radius:11px;background:rgba(232,217,192,.08);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.cta-row-ico svg{width:16px;height:16px;stroke:var(--sand)}
+.cta-row-lbl{font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(232,217,192,.3);margin-bottom:3px}
+.cta-row-val{font-size:14px;color:rgba(255,255,255,.85);font-weight:500}
+.cta-row-val a{color:var(--sand);transition:color var(--tr)}
+.cta-row-val a:hover{color:#fff}
+
+/* ─── FOOTER ─────────────────────────── */
+.site-footer{background:#13100a}
+.footer-inner{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:44px;padding:68px 0 52px}
+.footer-brand .f-logo{font-family:'Playfair Display',serif;font-size:23px;font-weight:900;color:var(--sand);display:block;margin-bottom:14px;line-height:1}
+.footer-brand .f-logo small{font-family:'Inter',sans-serif;font-size:9px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:rgba(232,217,192,.28);display:block;margin-top:3px}
+.footer-brand p{font-size:13px;color:rgba(232,217,192,.32);line-height:1.8;max-width:270px}
+.footer-socials{display:flex;gap:8px;margin-top:22px}
+.footer-socials a{width:36px;height:36px;border-radius:10px;background:rgba(232,217,192,.07);border:1px solid rgba(232,217,192,.08);display:flex;align-items:center;justify-content:center;color:rgba(232,217,192,.35);transition:all var(--tr)}
+.footer-socials a:hover{background:var(--car);border-color:var(--car);color:#fff}
+.footer-socials svg{width:14px;height:14px}
+.footer-col h4{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--sand);margin-bottom:8px}
+.footer-col-line{width:22px;height:3px;background:var(--car);border-radius:2px;margin-bottom:20px}
+.footer-col ul li{margin-bottom:10px}
+.footer-col ul a{font-size:13px;color:rgba(232,217,192,.32);transition:color var(--tr);display:inline-block}
+.footer-col ul a:hover{color:var(--sand)}
+.f-addr{font-size:13px;color:rgba(232,217,192,.32);line-height:1.85}
+.f-addr strong{display:block;color:rgba(232,217,192,.58);font-weight:700;margin-bottom:5px}
+.f-addr a{color:var(--car2);transition:color var(--tr)}
+.f-addr a:hover{color:var(--sand)}
+.footer-bottom{border-top:1px solid rgba(232,217,192,.06);padding:18px 0}
+.footer-bottom .container{display:flex;justify-content:space-between;font-size:12px;color:rgba(232,217,192,.2);flex-wrap:wrap;gap:8px}
+.footer-bottom b{color:var(--car2)}
+
+/* ─── WA FLOAT ─────────────────────── */
+.wa-float{position:fixed;bottom:26px;right:26px;z-index:800;width:52px;height:52px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(37,211,102,.4);transition:transform var(--tr)}
+.wa-float:hover{transform:scale(1.1)}
+.wa-float svg{width:28px;height:28px;fill:#fff;stroke:none}
+
+/* ─── DRAWER ─────────────────────────── */
+.drawer-bg{display:none;position:fixed;inset:0;background:rgba(35,24,12,.5);z-index:1000}
+.drawer-bg.on{display:block}
+.drawer{position:fixed;top:0;left:0;width:290px;max-width:90vw;height:100%;background:#fff;z-index:1001;transform:translateX(-110%);transition:transform .3s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column}
+.drawer.on{transform:none}
+.drawer-head{display:flex;align-items:center;justify-content:space-between;padding:20px;border-bottom:1px solid var(--border)}
+.drawer nav{display:flex;flex-direction:column;padding:14px;gap:2px}
+.drawer nav a{padding:12px 16px;font-size:14px;font-weight:600;border-radius:10px;color:var(--esp);transition:background var(--tr)}
+.drawer nav a:hover{background:var(--cream)}
+.drawer-foot{margin-top:auto;padding:20px;font-size:12.5px;color:var(--muted);border-top:1px solid var(--border);line-height:1.7}
+.drawer-foot strong{display:block;color:var(--esp);font-size:14px;margin-bottom:2px}
+
+/* ─── REVEAL ─────────────────────────── */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .65s ease,transform .65s ease}
+.reveal.vis{opacity:1;transform:none}
+
+/* ─── RESPONSIVE ─────────────────────── */
+@media(max-width:1100px){
+  .feat-strip-inner{grid-template-columns:1fr 1fr}
+  .fsi{border-bottom:1px solid rgba(232,217,192,.08)}
+  .cat-mosaic{grid-template-columns:1fr 1fr;grid-template-rows:280px 280px 280px}
+  .cat-c1{grid-row:1/3}
+  .footer-inner{grid-template-columns:1fr 1fr;gap:34px}
+}
+@media(max-width:860px){
+  .hero-nav-links{display:none}
+  .hero-menu-btn{display:flex}
+  .prod-grid{grid-template-columns:repeat(2,1fr)}
+  .cat-mosaic{grid-template-columns:1fr 1fr;grid-template-rows:260px 260px 260px}
+  .cat-c1{grid-column:1;grid-row:1}
+  .about-grid{grid-template-columns:1fr;gap:40px}
+  .cta-wrap{grid-template-columns:1fr;gap:44px}
+  .footer-inner{grid-template-columns:1fr 1fr}
+}
+@media(max-width:620px){
+  .hero-wrap{padding:12px}
+  .hero-card{min-height:92vh;border-radius:20px;box-shadow:0 0 0 4px rgba(255,255,255,.8),0 12px 40px rgba(35,24,12,.2)}
+  .hero-nav{padding:14px 16px;gap:10px}
+  .hero-logo{font-size:15px;padding:8px 12px}
+  .hero-connect-btn{display:none}
+  .hero-title{font-size:clamp(36px,11vw,56px)}
+  .hero-sub{font-size:14px}
+  .container{padding:0 18px}
+  .section{padding:60px 0}
+  .section-cta{padding:72px 0}
+  .prod-grid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .cat-mosaic{grid-template-columns:1fr;grid-template-rows:auto}
+  .cat-c1,.cat-c2,.cat-c3,.cat-c4{min-height:250px}
+  .feat-strip{margin:0 12px}
+  .footer-inner{grid-template-columns:1fr;gap:30px}
+  .topbar-r{display:none}
+}
 </style>
 </head>
-<body data-page="home">
+<body>
 <a class="skip" href="#main">Skip to content</a>
 
-<!-- TOP BAR -->
+<!-- TOPBAR -->
 <div class="topbar">
   <div class="container">
     <span>✦ Customisation available on selected designs</span>
-    <div class="topbar-right">
+    <div class="topbar-r">
       <a href="https://wa.me/923217714820" target="_blank" rel="noopener">WhatsApp +92 321 771 4820</a>
       <span>Main Lahore Road, Chiniot</span>
     </div>
   </div>
 </div>
 
-<!-- HEADER -->
-<header class="site-header" id="siteHeader">
-  <div class="container header-inner">
-    <div class="nav-pill">
-      <button class="icon-btn menu-btn" id="menuOpen" aria-label="Open menu" aria-controls="drawer" aria-expanded="false">
-        <svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
-      </button>
-      <a class="logo" href="index.html" aria-label="Decor Designo home">
-        <b>Decor Designo</b>
-        <small>Furniture · Chiniot</small>
-      </a>
-      <nav class="main-nav" aria-label="Main">
-        <a href="index.html" aria-current="page">Home</a>
-        <a href="shop.html">Shop</a>
-        <a href="shop.html?cat=bedroom">Bedroom</a>
-        <a href="shop.html?cat=sitting-room">Living Room</a>
-        <a href="shop.html?cat=dining-room">Dining Room</a>
-        <a href="shop.html?cat=almirah">Storage</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <div class="header-tools">
-        <button class="icon-btn" id="searchToggle" aria-label="Search" aria-expanded="false">
-          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
-        </button>
-        <a class="icon-btn" href="https://decordesigno.com/my-account/" target="_blank" rel="noopener" aria-label="My account">
-          <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>
-        </a>
-        <a class="icon-btn" href="https://decordesigno.com/cart/" target="_blank" rel="noopener" aria-label="Cart">
-          <svg viewBox="0 0 24 24"><path d="M5 7h14l-1.2 12.1a1 1 0 0 1-1 .9H7.2a1 1 0 0 1-1-.9L5 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-  <div class="search-bar" id="searchBar">
-    <form class="container" action="shop.html" method="get" role="search">
-      <label for="siteSearch" class="sr-only">Search products</label>
-      <input id="siteSearch" name="search" type="search" placeholder="Search beds, sofas, dining sets…" autocomplete="off">
-      <button class="btn-search-submit" type="submit">Search</button>
-    </form>
-  </div>
-</header>
-
-<!-- DRAWER -->
+<!-- DRAWER (mobile) -->
 <div class="drawer-bg" id="drawerBg"></div>
-<aside class="drawer" id="drawer" aria-label="Menu" aria-hidden="true">
+<aside class="drawer" id="drawer" aria-hidden="true">
   <div class="drawer-head">
-    <a class="logo" href="index.html"><b>Decor Designo</b><small>Furniture · Chiniot</small></a>
-    <button class="icon-btn" id="menuClose" aria-label="Close menu"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <span style="font-family:'Playfair Display',serif;font-size:18px;font-weight:900;color:var(--esp)">Decor Designo</span>
+    <button class="icon-btn" id="menuClose" aria-label="Close menu" style="width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--esp)">
+      <svg viewBox="0 0 24 24" style="width:18px;height:18px"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
   </div>
-  <nav aria-label="Mobile">
+  <nav>
     <a href="index.html">Home</a>
-    <a href="shop.html">Shop All</a>
+    <a href="shop.html">All Furniture</a>
     <a href="shop.html?cat=bedroom">Bedroom</a>
     <a href="shop.html?cat=sitting-room">Living Room</a>
     <a href="shop.html?cat=dining-room">Dining Room</a>
-    <a href="shop.html?cat=almirah">Storage</a>
-    <a href="shop.html?cat=swing-jholla">Swings</a>
+    <a href="shop.html?cat=almirah">Cabinets &amp; Storage</a>
+    <a href="shop.html?cat=swing-jholla">Swings &amp; Jhoolas</a>
     <a href="shop.html?cat=baby-cart">Baby Furniture</a>
     <a href="#contact">Contact</a>
-    <a href="https://decordesigno.com/my-account/" target="_blank" rel="noopener">My Account</a>
   </nav>
-  <div class="drawer-foot"><strong>+92 321 771 4820</strong>Main Lahore Road, Chiniot</div>
+  <div class="drawer-foot"><strong>+92 321 771 4820</strong>Main Lahore Road, Chiniot, Pakistan</div>
 </aside>
 
 <main id="main">
 
-<!-- ===== HERO ===== -->
-<section class="hero" aria-labelledby="heroTitle">
-  <div class="hero-bg" id="heroBg"></div>
-  <div class="hero-overlay"></div>
-  <button class="hero-arrow left" aria-label="Previous slide">
-    <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
-  </button>
-  <div class="hero-content">
-    <span class="hero-eyebrow">Decor Designo — Chiniot, Pakistan</span>
-    <h1 id="heroTitle">The Art of <em>Chinioti</em><br>Living</h1>
-    <p class="hero-sub">Discover handcrafted furniture that defines your space — beds, sofas, dining sets and more, made with passion in Chiniot.</p>
-    <div class="hero-actions">
-      <a class="btn btn-gold" href="shop.html">Explore Collection</a>
-      <a class="btn btn-outline-light" href="#categories">Shop by Room</a>
-    </div>
-    <div class="hero-stats">
-      <div class="hero-stat"><b>375+</b><span>Designs</span></div>
-      <div class="hero-stat"><b>Chiniot</b><span>Showroom</span></div>
-      <div class="hero-stat"><b>Custom</b><span>Made to size</span></div>
-    </div>
-  </div>
-  <button class="hero-arrow right" aria-label="Next slide">
-    <svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
-  </button>
-</section>
+<!-- ══════════════════════════════════════
+     HERO — ROUNDED CARD WITH NAV INSIDE
+     ══════════════════════════════════════ -->
+<div class="hero-wrap">
+  <div class="hero-card" id="heroCard">
 
-<!-- ===== FEATURE STRIP ===== -->
-<div class="feature-strip">
-  <div class="container">
-    <div class="feature-item">
+    <!-- Fallback background (always visible) -->
+    <div class="hero-bg-fallback"></div>
+
+    <!-- Background photo -->
+    <img class="hero-bg" referrerpolicy="no-referrer"
+         src="https://decordesigno.com/wp-content/uploads/2026/04/Luxury-Royal-Sofa-Set-Design-in-Pakistan-Majestic-Chinioti-Modern-Sofa-2025decor-designo.png"
+         alt="Luxury Chinioti furniture">
+
+    <!-- Dark overlay -->
+    <div class="hero-overlay"></div>
+
+    <!-- ── NAVBAR inside card ── -->
+    <nav class="hero-nav" aria-label="Main navigation">
+      <!-- Logo pill -->
+      <a class="hero-logo" href="index.html">
+        Decor Designo
+        <small>Furniture · Chiniot</small>
+      </a>
+
+      <!-- Nav links pill (desktop) -->
+      <div class="hero-nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="shop.html">Catalogue</a>
+        <a href="shop.html?cat=bedroom">Bedroom</a>
+        <a href="shop.html?cat=sitting-room">Living Room</a>
+        <a href="shop.html?cat=dining-room">Dining</a>
+      </div>
+
+      <!-- Right buttons -->
+      <div class="hero-nav-right">
+        <a class="hero-connect-btn" href="#contact">Connect with us</a>
+        <!-- Arrow / external link button -->
+        <a class="hero-arrow-btn" href="https://decordesigno.com" target="_blank" rel="noopener" aria-label="Visit full site">
+          <svg viewBox="0 0 24 24"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </a>
+        <!-- Mobile hamburger -->
+        <button class="hero-menu-btn" id="menuOpen" aria-label="Open menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ── HERO BODY (centered text) ── -->
+    <div class="hero-body">
+      <h1 class="hero-title">
+        Luxury Furniture for<br><em>Discerning</em> Homes
+      </h1>
+      <p class="hero-sub">
+        Experience the art of Chinioti craftsmanship — handcrafted beds, sofas and dining sets made to transform your living space.
+      </p>
+      <a class="hero-cta" href="shop.html">
+        Explore Collection
+        <span class="hero-cta-icon">
+          <svg viewBox="0 0 24 24"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </span>
+      </a>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero-scroll">
+      <div class="hero-scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+
+  </div><!-- /hero-card -->
+</div><!-- /hero-wrap -->
+
+<!-- FEATURE STRIP -->
+<div class="feat-strip">
+  <div class="feat-strip-inner">
+    <div class="fsi">
       <svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 5v3h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
-      <div class="feature-item-text"><strong>Free Delivery</strong><span>Orders above PKR 50,000</span></div>
+      <div><strong>Free Delivery</strong><span>Orders above PKR 50,000</span></div>
     </div>
-    <div class="feature-item">
-      <svg viewBox="0 0 24 24"><path d="M12 2L3 7l9 5 9-5-9-5z"/><path d="M3 12l9 5 9-5M3 17l9 5 9-5"/></svg>
-      <div class="feature-item-text"><strong>Quality Assurance</strong><span>Premium Chinioti wood</span></div>
+    <div class="fsi">
+      <svg viewBox="0 0 24 24"><path d="M12 2L3 7l9 5 9-5-9-5z"/><path d="M3 12l9 5 9-5"/><path d="M3 17l9 5 9-5"/></svg>
+      <div><strong>Quality Assurance</strong><span>Premium Chinioti wood</span></div>
     </div>
-    <div class="feature-item">
-      <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-      <div class="feature-item-text"><strong>Easy Returns</strong><span>Within 14 days</span></div>
+    <div class="fsi">
+      <svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+      <div><strong>Easy Returns</strong><span>Within 14 days</span></div>
     </div>
-    <div class="feature-item">
+    <div class="fsi">
       <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-      <div class="feature-item-text"><strong>Support 24/7</strong><span>WhatsApp anytime</span></div>
+      <div><strong>Support 24/7</strong><span>WhatsApp anytime</span></div>
     </div>
   </div>
 </div>
 
-<!-- ===== SHOP BY CATEGORY ===== -->
-<section class="section" id="categories" aria-labelledby="catTitle">
+<!-- ══════════════════════════════════════
+     BESTSELLERS
+     ══════════════════════════════════════ -->
+<section class="section" aria-labelledby="bestTitle">
   <div class="container">
-    <div class="section-head reveal">
+    <div class="sec-head reveal">
       <div>
-        <span class="overline">Shop by room</span>
-        <h2 id="catTitle">Find the right piece for every room</h2>
+        <span class="sec-tag">Our Collection</span>
+        <h2 class="sec-title" id="bestTitle">Bestselling Pieces</h2>
       </div>
-      <a class="text-link" href="shop.html">View all categories →</a>
+      <div class="sec-right">
+        <div class="sec-arrows">
+          <button class="sec-arr" aria-label="Prev"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg></button>
+          <button class="sec-arr" aria-label="Next"><svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg></button>
+        </div>
+        <a class="view-all" href="shop.html">View All <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
     </div>
-    <div class="cat-row" id="catGrid">
-      <a class="cat-tile c1" href="shop.html?cat=bedroom">
-        <img src="https://decordesigno.com/wp-content/uploads/2026/10/Signature-Wooden-Bed-Elegant-Handcrafted-WB08-1-1.jpg" alt="Bedroom furniture" referrerpolicy="no-referrer">
-        <div class="cat-tile-overlay"></div>
-        <div class="cat-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
-        <div class="cat-tile-info"><strong>Bedroom</strong><span>45 items</span></div>
+    <div class="prod-grid">
+      <a href="https://decordesigno.com/product/signature-wooden-bed-wb08/" target="_blank" rel="noopener" class="prod-card reveal">
+        <div class="prod-img-wrap">
+          <span class="prod-badge badge-sale">Sale</span>
+          <button class="prod-heart" aria-label="Wishlist"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+          <img src="https://decordesigno.com/wp-content/uploads/2026/10/Signature-Wooden-Bed-Elegant-Handcrafted-WB08-1-1.jpg" alt="Luxury Signature Wooden Bed WB08" referrerpolicy="no-referrer">
+          <div class="prod-indicator"></div>
+        </div>
+        <div class="prod-info">
+          <div class="prod-name">Luxury Signature Wooden Bed WB08</div>
+          <div class="prod-price">PKR 1,475k <span class="old">1,650k</span></div>
+        </div>
       </a>
-      <a class="cat-tile c2" href="shop.html?cat=sitting-room">
-        <img src="https://decordesigno.com/wp-content/uploads/2026/09/Luxury-Statement-Sofa-for-Contemporary-Living-Room-SS0022.jpeg" alt="Living Room furniture" referrerpolicy="no-referrer">
-        <div class="cat-tile-overlay"></div>
-        <div class="cat-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
-        <div class="cat-tile-info"><strong>Living Room</strong><span>38 items</span></div>
+      <a href="https://decordesigno.com/product/murphy-bed/" target="_blank" rel="noopener" class="prod-card reveal">
+        <div class="prod-img-wrap">
+          <span class="prod-badge badge-new">New</span>
+          <button class="prod-heart" aria-label="Wishlist"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+          <img src="https://decordesigno.com/wp-content/uploads/2026/09/Premium-Murphy-Bed-Elegant-Space-Saving-Wall-Bed-1.jpg" alt="Murphy Bed MB01" referrerpolicy="no-referrer">
+          <div class="prod-indicator"></div>
+        </div>
+        <div class="prod-info">
+          <div class="prod-name">Luxury Murphy Space-Saving Wall Bed MB01</div>
+          <div class="prod-price">PKR 3,408k <span class="old">3,505k</span></div>
+        </div>
       </a>
-      <a class="cat-tile c3" href="shop.html?cat=dining-room">
-        <img src="https://decordesigno.com/wp-content/uploads/2026/09/Premium-Sheesham-Dining-Table-Set-Modern-8-Seater-DT0009.jpeg" alt="Dining Room furniture" referrerpolicy="no-referrer">
-        <div class="cat-tile-overlay"></div>
-        <div class="cat-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
-        <div class="cat-tile-info"><strong>Dining Room</strong><span>32 items</span></div>
+      <a href="https://decordesigno.com/product/premium-sheesham-dining-set/" target="_blank" rel="noopener" class="prod-card reveal">
+        <div class="prod-img-wrap">
+          <span class="prod-badge badge-sale">Sale</span>
+          <button class="prod-heart" aria-label="Wishlist"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+          <img src="https://decordesigno.com/wp-content/uploads/2026/09/Premium-Sheesham-Dining-Table-Set-Modern-8-Seater-DT0009.jpeg" alt="Sheesham Dining Set" referrerpolicy="no-referrer">
+          <div class="prod-indicator"></div>
+        </div>
+        <div class="prod-info">
+          <div class="prod-name">Premium Sheesham Dining Table Set 8-Seater</div>
+          <div class="prod-price">PKR 3,689k <span class="old">3,784k</span></div>
+        </div>
       </a>
-      <a class="cat-tile c4" href="shop.html?cat=almirah">
-        <img src="https://decordesigno.com/wp-content/uploads/2025/08/Crockery-Showcase-Designs-in-Pakistan-Wooden-Modern-Cabinets-decor-designo-furniture4.png" alt="Cabinets and Storage" referrerpolicy="no-referrer">
-        <div class="cat-tile-overlay"></div>
-        <div class="cat-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
-        <div class="cat-tile-info"><strong>Cabinets &amp; Storage</strong><span>28 items</span></div>
-      </a>
-      <a class="cat-tile c5" href="shop.html?cat=swing-jholla">
-        <img src="https://decordesigno.com/wp-content/uploads/2026/08/Large-Wooden-Swing-Chinioti-Family-Swing.png" alt="Swings and Jhoolas" referrerpolicy="no-referrer">
-        <div class="cat-tile-overlay"></div>
-        <div class="cat-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
-        <div class="cat-tile-info"><strong>Swings &amp; Jhoolas</strong><span>15 items</span></div>
-      </a>
-      <a class="cat-tile c6" href="shop.html?cat=baby-cart">
-        <img src="https://decordesigno.com/wp-content/uploads/2025/04/Buy-Luxury-Wooden-Baby-Cot-in-Pakistan-Decor-Designo-furniture-1.png" alt="Baby Furniture" referrerpolicy="no-referrer">
-        <div class="cat-tile-overlay"></div>
-        <div class="cat-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
-        <div class="cat-tile-info"><strong>Baby Furniture</strong><span>12 items</span></div>
+      <a href="https://decordesigno.com/product/luxury-statement-sofa-ss002/" target="_blank" rel="noopener" class="prod-card reveal">
+        <div class="prod-img-wrap">
+          <button class="prod-heart" aria-label="Wishlist"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+          <img src="https://decordesigno.com/wp-content/uploads/2026/09/Luxury-Statement-Sofa-for-Contemporary-Living-Room-SS0022-300x300.jpeg" alt="Luxury Statement Sofa" referrerpolicy="no-referrer">
+          <div class="prod-indicator"></div>
+        </div>
+        <div class="prod-info">
+          <div class="prod-name">Luxury Statement Sofa for Contemporary Living Room</div>
+          <div class="prod-price contact">Contact for price</div>
+        </div>
       </a>
     </div>
   </div>
 </section>
 
-<!-- ===== PROMO SPLIT ===== -->
-<section class="section section-ivory" aria-label="Promo">
-  <div class="container promo-split">
-    <div class="promo-copy reveal">
-      <span class="overline">Elevate Your Home</span>
-      <h2>Luxury Living:<br>Crafted with Passion</h2>
-      <p>Most of our pieces carry the spirit of Chinioti craftsmanship — a tradition of intricate woodwork, bold carving and timeless silhouettes that transform any room into a statement. Each piece is made to order, ensuring it fits your space perfectly.</p>
-      <a class="btn btn-dark" href="shop.html">Shop Now</a>
-    </div>
-    <div class="promo-img reveal">
-      <img src="https://decordesigno.com/wp-content/uploads/2026/09/Luxury-Statement-Sofa-for-Contemporary-Living-Room-SS0022.jpeg" alt="Luxury Statement Sofa by Decor Designo" loading="lazy">
-    </div>
-  </div>
-</section>
-
-<!-- ===== BESTSELLERS ===== -->
-<section class="section section-dark on-dark" aria-labelledby="bestTitle">
+<!-- ══════════════════════════════════════
+     CATEGORIES MOSAIC
+     ══════════════════════════════════════ -->
+<section class="section section-cream" aria-labelledby="catTitle">
   <div class="container">
-    <div class="bestsellers-head reveal">
+    <div class="sec-head reveal">
       <div>
-        <span class="overline">Our Favourites</span>
-        <h2 id="bestTitle">Bestsellers</h2>
-        <p>Experience the finest pieces from our store.</p>
+        <span class="sec-tag">Shop by Room</span>
+        <h2 class="sec-title" id="catTitle">Our Categories</h2>
       </div>
-      <a href="shop.html">View All</a>
     </div>
-    <div class="product-grid" id="bestGrid">
-      <div class="product-card">
-        <div class="product-thumb">
-          <span class="product-badge badge-sale">SALE</span>
-          <img src="https://decordesigno.com/wp-content/uploads/2026/10/Signature-Wooden-Bed-Elegant-Handcrafted-WB08-1-1.jpg" alt="Luxury Signature Wooden Bed WB08" loading="lazy">
+    <div class="cat-mosaic">
+      <!-- Big left — Bedroom -->
+      <a class="cat-c1" href="shop.html?cat=bedroom" aria-label="Bedroom">
+        <div class="cat-fb"></div>
+        <img class="cat-img" src="https://decordesigno.com/wp-content/uploads/2026/10/Signature-Wooden-Bed-Elegant-Handcrafted-WB08-1-1.jpg" alt="Bedroom" referrerpolicy="no-referrer">
+        <div class="cat-overlay"></div>
+        <div class="cat-lbl">
+          <div class="cat-lbl-n">01 — Bedroom</div>
+          <div class="cat-lbl-name">Bedroom</div>
+          <div class="cat-lbl-count">45 Pieces</div>
         </div>
-        <div class="product-info">
-          <div class="product-cat">Bed Set</div>
-          <div class="product-name">Luxury Signature Wooden Bed Elegant Handcrafted WB08</div>
-          <div class="product-price">$1,475 <span class="old">$1,650</span></div>
+      </a>
+      <!-- Brown text card — Living Room -->
+      <div class="cat-c2" style="display:flex;flex-direction:column;justify-content:space-between">
+        <div>
+          <div class="cat-c2-over">02 — Living Room</div>
+          <div class="cat-c2-title">Everything for a Cosy Living Room</div>
+          <div class="cat-c2-desc">Furniture that transforms your space and creates harmony — crafted when you need it, built to last forever.</div>
         </div>
-        <a class="product-link" href="https://decordesigno.com/product/signature-wooden-bed-wb08/" target="_blank" rel="noopener">View Product</a>
+        <a class="cat-c2-link" href="shop.html?cat=sitting-room">
+          Explore <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
       </div>
-      <div class="product-card">
-        <div class="product-thumb">
-          <img src="https://decordesigno.com/wp-content/uploads/2026/09/Premium-Murphy-Bed-Elegant-Space-Saving-Wall-Bed-1.jpg" alt="Luxury Murphy Bed MB01" loading="lazy">
+      <!-- Dining Room -->
+      <a class="cat-c3" href="shop.html?cat=dining-room" aria-label="Dining Room">
+        <div class="cat-fb"></div>
+        <img class="cat-img" src="https://decordesigno.com/wp-content/uploads/2026/09/Premium-Sheesham-Dining-Table-Set-Modern-8-Seater-DT0009.jpeg" alt="Dining Room" referrerpolicy="no-referrer">
+        <div class="cat-overlay"></div>
+        <div class="cat-lbl">
+          <div class="cat-lbl-n">03 — Dining</div>
+          <div class="cat-lbl-name">Dining Room</div>
+          <div class="cat-lbl-count">32 Pieces</div>
         </div>
-        <div class="product-info">
-          <div class="product-cat">Bed Set</div>
-          <div class="product-name">Luxury Murphy Bed Ultimate Space-Saving Wall Bed MB01</div>
-          <div class="product-price">$3,408 <span class="old">$3,505</span></div>
+      </a>
+      <!-- Storage -->
+      <a class="cat-c4" href="shop.html?cat=almirah" aria-label="Cabinets & Storage">
+        <div class="cat-fb"></div>
+        <img class="cat-img" src="https://decordesigno.com/wp-content/uploads/2025/08/Crockery-Showcase-Designs-in-Pakistan-Wooden-Modern-Cabinets-decor-designo-furniture4.png" alt="Storage" referrerpolicy="no-referrer">
+        <div class="cat-overlay"></div>
+        <div class="cat-lbl">
+          <div class="cat-lbl-n">04 — Storage</div>
+          <div class="cat-lbl-name">Cabinets</div>
+          <div class="cat-lbl-count">28 Pieces</div>
         </div>
-        <a class="product-link" href="https://decordesigno.com/product/murphy-bed/" target="_blank" rel="noopener">View Product</a>
-      </div>
-      <div class="product-card">
-        <div class="product-thumb">
-          <span class="product-badge badge-sale">SALE</span>
-          <img src="https://decordesigno.com/wp-content/uploads/2026/09/Premium-Sheesham-Dining-Table-Set-Modern-8-Seater-DT0009.jpeg" alt="Premium Sheesham Dining Table Set" loading="lazy">
-        </div>
-        <div class="product-info">
-          <div class="product-cat">Dining Set</div>
-          <div class="product-name">Amazing Premium Sheesham Dining Table Set Luxury 8-Seater</div>
-          <div class="product-price">$3,689 <span class="old">$3,784</span></div>
-        </div>
-        <a class="product-link" href="https://decordesigno.com/product/premium-sheesham-dining-set/" target="_blank" rel="noopener">View Product</a>
-      </div>
-      <div class="product-card">
-        <div class="product-thumb">
-          <img src="https://decordesigno.com/wp-content/uploads/2026/09/Luxury-Statement-Sofa-for-Contemporary-Living-Room-SS0022-300x300.jpeg" alt="Luxury Statement Sofa SS002" loading="lazy">
-        </div>
-        <div class="product-info">
-          <div class="product-cat">Sofa Set</div>
-          <div class="product-name">Luxury Statement Sofa for Contemporary Living Room SS002</div>
-          <div class="product-price contact">Contact for price</div>
-        </div>
-        <a class="product-link" href="https://decordesigno.com/product/luxury-statement-sofa-ss002/" target="_blank" rel="noopener">View Product</a>
-      </div>
+      </a>
+    </div>
+    <div class="cat-more reveal">
+      <a class="view-all" href="shop.html">View all categories <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
     </div>
   </div>
 </section>
 
-<!-- ===== ABOUT ===== -->
+<!-- ══════════════════════════════════════
+     ABOUT
+     ══════════════════════════════════════ -->
 <section class="section" id="about" aria-labelledby="aboutTitle">
-  <div class="container about">
-    <div class="about-media reveal">
-      <div class="big"><img src="https://decordesigno.com/wp-content/uploads/2026/10/Signature-Wooden-Bed-Elegant-Handcrafted-WB08-decor-designo-1.jpg" alt="Signature Wooden Bed WB08" loading="lazy"></div>
-      <div class="sm"><img src="https://decordesigno.com/wp-content/uploads/2026/09/Premium-Sheesham-Dining-Table-Set-Modern-8-Seater-DT0009-1.jpeg" alt="Sheesham dining set" loading="lazy"></div>
-      <div class="sm"><img src="https://decordesigno.com/wp-content/uploads/2026/09/Elegant-Solid-Wood-Accent-Chair-for-Bedroom-C004-Handcrafted-Furniture-e1788294869226-300x300.jpg" alt="Accent chair C004" loading="lazy"></div>
+  <div class="container about-grid">
+    <div class="about-imgs reveal">
+      <div class="big"><img src="https://decordesigno.com/wp-content/uploads/2026/10/Signature-Wooden-Bed-Elegant-Handcrafted-WB08-decor-designo-1.jpg" alt="Signature Wooden Bed" referrerpolicy="no-referrer"></div>
+      <div class="sm"><img src="https://decordesigno.com/wp-content/uploads/2026/09/Premium-Sheesham-Dining-Table-Set-Modern-8-Seater-DT0009-1.jpeg" alt="Sheesham Dining Set" referrerpolicy="no-referrer"></div>
+      <div class="sm"><img src="https://decordesigno.com/wp-content/uploads/2026/09/Elegant-Solid-Wood-Accent-Chair-for-Bedroom-C004-Handcrafted-Furniture-e1788294869226-300x300.jpg" alt="Accent Chair" referrerpolicy="no-referrer"></div>
     </div>
     <div class="about-copy reveal">
-      <span class="overline">Why Decor Designo</span>
-      <h2 id="aboutTitle">Make room for better living</h2>
-      <p>Furniture that brings together visual character, practical design and a distinctive sense of style — from bedrooms and dining rooms to swings and baby cots, made in Chiniot.</p>
-      <div class="features">
-        <div class="feature-row">
-          <svg viewBox="0 0 32 32"><path d="M5 27l5-1 15-15-4-4L6 22l-1 5zM18 10l4 4"/></svg>
-          <div><h3>Made to your size</h3><p>Dimensions, colour and finish can be discussed on selected designs before production.</p></div>
+      <span class="over-tag">Why Decor Designo</span>
+      <h2 id="aboutTitle">Make Room for Better Living</h2>
+      <p>Furniture that brings together visual character, practical design and a distinctive sense of style — from bedrooms and dining rooms to swings and baby cots, proudly made in Chiniot.</p>
+      <div class="feat-list">
+        <div class="feat-item">
+          <div class="feat-icon"><svg viewBox="0 0 32 32"><path d="M5 27l5-1 15-15-4-4L6 22l-1 5zM18 10l4 4"/></svg></div>
+          <div><h3>Made to Your Size</h3><p>Dimensions, colour and finish discussed on selected designs before production.</p></div>
         </div>
-        <div class="feature-row">
-          <svg viewBox="0 0 32 32"><path d="M6 6h20v20H6zM6 12h20M12 12v14"/></svg>
-          <div><h3>Clear specifications</h3><p>Material, finish and measurements are listed on product pages so you know exactly what you are ordering.</p></div>
+        <div class="feat-item">
+          <div class="feat-icon"><svg viewBox="0 0 32 32"><path d="M6 6h20v20H6zM6 12h20M12 12v14"/></svg></div>
+          <div><h3>Clear Specifications</h3><p>Material, finish and measurements listed on every product page.</p></div>
         </div>
-        <div class="feature-row">
-          <svg viewBox="0 0 32 32"><path d="M16 29s9-8.2 9-15a9 9 0 1 0-18 0c0 6.8 9 15 9 15z"/><circle cx="16" cy="14" r="3"/></svg>
-          <div><h3>Showroom in Chiniot</h3><p>Visit us on Main Lahore Road or speak to the team on WhatsApp before you buy.</p></div>
+        <div class="feat-item">
+          <div class="feat-icon"><svg viewBox="0 0 32 32"><path d="M16 29s9-8.2 9-15a9 9 0 1 0-18 0c0 6.8 9 15 9 15z"/><circle cx="16" cy="14" r="3"/></svg></div>
+          <div><h3>Showroom in Chiniot</h3><p>Visit Main Lahore Road or speak to our team on WhatsApp before you buy.</p></div>
         </div>
       </div>
-      <a class="btn btn-primary" href="shop.html">Explore our furniture</a>
+      <a class="btn-dark" href="shop.html">Explore Our Furniture</a>
     </div>
   </div>
 </section>
 
-<!-- ===== CTA / CONTACT ===== -->
-<section class="section-cta" id="contact" aria-labelledby="contactTitle">
-  <div class="container cta-inner">
+<!-- ══════════════════════════════════════
+     CTA / CONTACT
+     ══════════════════════════════════════ -->
+<section class="section-cta" id="contact" aria-labelledby="ctaTitle">
+  <div class="container cta-wrap">
     <div class="cta-copy reveal">
-      <span class="overline">Get in touch</span>
-      <h2 id="contactTitle">Need help choosing<br>a size or finish?</h2>
-      <p>Send us a photo of your room or the design you like on WhatsApp — our team will guide you to the perfect piece.</p>
-      <div class="cta-actions">
+      <span class="over-tag">Get in Touch</span>
+      <h2 id="ctaTitle">Need Help Choosing a Size or Finish?</h2>
+      <p>Send us a photo of your room or the design you like on WhatsApp — our team will guide you to the perfect piece for your home.</p>
+      <div class="cta-btns">
         <a class="btn-wa" href="https://wa.me/923217714820" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm4.5 14.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3 0-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3c-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.7c.1.2 1.9 2.9 4.6 4 1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2l-.1-.1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm4.5 14.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3 0-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.3 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.7c.1.2 1.9 2.9 4.6 4 1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2l-.1-.1z"/></svg>
           Chat on WhatsApp
         </a>
         <a class="btn-ghost" href="https://decordesigno.com/contact-us/" target="_blank" rel="noopener">Contact Page →</a>
@@ -652,18 +809,18 @@ svg{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-l
         <h3>Decor Designo Showroom</h3>
         <p>Visit us or reach out anytime</p>
       </div>
-      <div class="cta-card-body">
+      <div class="cta-rows">
         <div class="cta-row">
-          <div class="cta-row-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-          <div><div class="cta-row-label">Showroom</div><div class="cta-row-val">Main Lahore Road, Chiniot, Pakistan</div></div>
+          <div class="cta-row-ico"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><div class="cta-row-lbl">Showroom</div><div class="cta-row-val">Main Lahore Road, Chiniot, Pakistan</div></div>
         </div>
         <div class="cta-row">
-          <div class="cta-row-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.03z"/></svg></div>
-          <div><div class="cta-row-label">Phone / WhatsApp</div><div class="cta-row-val"><a href="tel:+923217714820">+92 321 771 4820</a></div></div>
+          <div class="cta-row-ico"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16z"/></svg></div>
+          <div><div class="cta-row-lbl">Phone / WhatsApp</div><div class="cta-row-val"><a href="tel:+923217714820">+92 321 771 4820</a></div></div>
         </div>
         <div class="cta-row">
-          <div class="cta-row-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
-          <div><div class="cta-row-label">Opening Hours</div><div class="cta-row-val">Mon – Sat: 9am – 8pm · Sun: 11am – 6pm</div></div>
+          <div class="cta-row-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <div><div class="cta-row-lbl">Opening Hours</div><div class="cta-row-val">Mon – Sat 9am – 8pm · Sun 11am – 6pm</div></div>
         </div>
       </div>
     </div>
@@ -672,33 +829,34 @@ svg{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-l
 
 </main>
 
-<!-- ===== FOOTER ===== -->
+<!-- ══════════════════════════════════════
+     FOOTER
+     ══════════════════════════════════════ -->
 <footer class="site-footer">
-  <!-- Brand bar -->
-  <div class="footer-brand">
-    <div class="container">
-      <div class="footer-brand-left">
-        <a class="logo" href="index.html"><b>Decor Designo</b><small>Furniture · Chiniot</small></a>
-        <p>Handcrafted furniture that brings character, elegance and comfort to homes across Pakistan. Made in Chiniot since generations.</p>
-        <div class="footer-brand-socials">
-          <a href="https://www.facebook.com/share/15nKgWzMMS/?mibextid=qi2Omg" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8V6.5c0-.8.2-1.5 1.5-1.5H17V2h-2.6C11.6 2 11 3.8 11 6v2H9v3h2v11h3V11h2.4l.6-3z"/></svg></a>
-          <a href="https://www.instagram.com/invites/contact/?igsh=1xhk76mph8f8y&utm_content=e5ooafd" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zM17.3 5.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zM12 2c-2.7 0-3 0-4.1.1C4.4 2.2 2.2 4.4 2.1 7.9 2 9 2 9.3 2 12s0 3 .1 4.1c.1 3.5 2.3 5.7 5.8 5.8 1.1.1 1.4.1 4.1.1s3 0 4.1-.1c3.5-.1 5.7-2.3 5.8-5.8.1-1.1.1-1.4.1-4.1s0-3-.1-4.1c-.1-3.5-2.3-5.7-5.8-5.8C15 2 14.7 2 12 2z"/></svg></a>
-          <a href="https://youtube.com/@decordesigno" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12 31 31 0 0 0 1 16.8a3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1c.4-1.6.5-4.8.5-4.8s0-3.2-.5-4.8zM9.8 15.1V8.9L15.6 12l-5.8 3.1z"/></svg></a>
-          <a href="https://pin.it/5iswjaUyG" target="_blank" rel="noopener" aria-label="Pinterest"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.6 19.3c-.1-.8-.2-2 0-2.9l1.2-5s-.3-.6-.3-1.5c0-1.4.8-2.5 1.8-2.5.9 0 1.3.7 1.3 1.4 0 .9-.6 2.2-.9 3.4-.2 1 .5 1.9 1.6 1.9 1.9 0 3.3-2 3.3-4.9 0-2.6-1.8-4.4-4.5-4.4-3 0-4.8 2.3-4.8 4.6 0 .9.4 1.9.8 2.4l.1.4-.3 1.2c0 .2-.2.3-.4.2-1.4-.6-2.2-2.6-2.2-4.2 0-3.4 2.5-6.6 7.2-6.6 3.8 0 6.7 2.7 6.7 6.3 0 3.8-2.4 6.8-5.7 6.8-1.1 0-2.2-.6-2.5-1.3l-.7 2.6c-.3 1-.9 2.2-1.4 2.9A10 10 0 1 0 12 2z"/></svg></a>
-          <a href="https://twitter.com/DecorDesigno" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24"><path d="M17.8 3h3.1l-6.8 7.8L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.3-8.3L2 3h6.3l4.4 5.8L17.8 3zm-1.1 16.2h1.7L7.4 4.7H5.6l11.1 14.5z"/></svg></a>
-        </div>
-      </div>
-      <div class="footer-brand-right">
-        <a class="footer-link-wa" href="https://wa.me/923217714820" target="_blank" rel="noopener">WhatsApp Us</a>
-        <a class="footer-link-shop" href="shop.html">Browse Shop</a>
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a class="f-logo" href="index.html">Decor Designo<small>Furniture · Chiniot</small></a>
+      <p>Handcrafted furniture that brings character, elegance and comfort to homes across Pakistan — made in Chiniot.</p>
+      <div class="footer-socials">
+        <a href="https://www.facebook.com/share/15nKgWzMMS/" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24"><path d="M14 8V6.5c0-.8.2-1.5 1.5-1.5H17V2h-2.6C11.6 2 11 3.8 11 6v2H9v3h2v11h3V11h2.4l.6-3z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/invites/contact/?igsh=1xhk76mph8f8y&utm_content=e5ooafd" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zM17.3 5.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zM12 2c-2.7 0-3 0-4.1.1C4.4 2.2 2.2 4.4 2.1 7.9 2 9 2 9.3 2 12s0 3 .1 4.1c.1 3.5 2.3 5.7 5.8 5.8 1.1.1 1.4.1 4.1.1s3 0 4.1-.1c3.5-.1 5.7-2.3 5.8-5.8.1-1.1.1-1.4.1-4.1s0-3-.1-4.1c-.1-3.5-2.3-5.7-5.8-5.8C15 2 14.7 2 12 2z"/></svg>
+        </a>
+        <a href="https://youtube.com/@decordesigno" target="_blank" rel="noopener" aria-label="YouTube">
+          <svg viewBox="0 0 24 24"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12 31 31 0 0 0 1 16.8a3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1c.4-1.6.5-4.8.5-4.8s0-3.2-.5-4.8zM9.8 15.1V8.9L15.6 12l-5.8 3.1z"/></svg>
+        </a>
+        <a href="https://pin.it/5iswjaUyG" target="_blank" rel="noopener" aria-label="Pinterest">
+          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.6 19.3c-.1-.8-.2-2 0-2.9l1.2-5s-.3-.6-.3-1.5c0-1.4.8-2.5 1.8-2.5.9 0 1.3.7 1.3 1.4 0 .9-.6 2.2-.9 3.4-.2 1 .5 1.9 1.6 1.9 1.9 0 3.3-2 3.3-4.9 0-2.6-1.8-4.4-4.5-4.4-3 0-4.8 2.3-4.8 4.6 0 .9.4 1.9.8 2.4l.1.4-.3 1.2c0 .2-.2.3-.4.2-1.4-.6-2.2-2.6-2.2-4.2 0-3.4 2.5-6.6 7.2-6.6 3.8 0 6.7 2.7 6.7 6.3 0 3.8-2.4 6.8-5.7 6.8-1.1 0-2.2-.6-2.5-1.3l-.7 2.6c-.3 1-.9 2.2-1.4 2.9A10 10 0 1 0 12 2z"/></svg>
+        </a>
+        <a href="https://twitter.com/DecorDesigno" target="_blank" rel="noopener" aria-label="X">
+          <svg viewBox="0 0 24 24"><path d="M17.8 3h3.1l-6.8 7.8L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.3-8.3L2 3h6.3l4.4 5.8L17.8 3zm-1.1 16.2h1.7L7.4 4.7H5.6l11.1 14.5z"/></svg>
+        </a>
       </div>
     </div>
-  </div>
-  <!-- Link columns -->
-  <div class="container footer-cols">
     <div class="footer-col">
-      <h3>Shop</h3>
-      <div class="footer-col-line"></div>
+      <h4>Shop</h4><div class="footer-col-line"></div>
       <ul>
         <li><a href="shop.html">All Furniture</a></li>
         <li><a href="shop.html?cat=bedroom">Bedroom</a></li>
@@ -710,8 +868,7 @@ svg{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-l
       </ul>
     </div>
     <div class="footer-col">
-      <h3>Customer Care</h3>
-      <div class="footer-col-line"></div>
+      <h4>Customer Care</h4><div class="footer-col-line"></div>
       <ul>
         <li><a href="https://decordesigno.com/my-account/" target="_blank" rel="noopener">My Account</a></li>
         <li><a href="https://decordesigno.com/cart/" target="_blank" rel="noopener">Cart</a></li>
@@ -721,143 +878,52 @@ svg{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-l
       </ul>
     </div>
     <div class="footer-col">
-      <h3>Visit Us</h3>
-      <div class="footer-col-line"></div>
-      <div class="footer-col-address">
+      <h4>Visit Us</h4><div class="footer-col-line"></div>
+      <div class="f-addr">
         <strong>Decor Designo Furniture</strong>
         Main Lahore Road<br>Chiniot, Punjab, Pakistan<br><br>
-        <a href="tel:+923217714820" style="color:var(--gold)">+92 321 771 4820</a><br><br>
+        <a href="tel:+923217714820">+92 321 771 4820</a><br><br>
         Mon – Sat: 9am – 8pm<br>Sun: 11am – 6pm
       </div>
     </div>
   </div>
-  <!-- Bottom bar -->
-  <div class="footer-bottom-bar">
+  <div class="footer-bottom">
     <div class="container">
       <span>© 2026 <b>Decor Designo</b> Furniture. All rights reserved.</span>
-      <span>Prices in PKR as listed on decordesigno.com</span>
+      <span>Prices in PKR · decordesigno.com</span>
     </div>
   </div>
 </footer>
 
 <!-- WA FLOAT -->
 <a class="wa-float" href="https://wa.me/923217714820" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3c-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.7c.1.2 1.9 2.9 4.6 4 1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3 0-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.3 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.7c.1.2 1.9 2.9 4.6 4 1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>
 </a>
 
-<!-- SCRIPTS -->
 <script src="assets/config.js"></script>
+<script src="assets/app.js"></script>
 <script>
-/* ===== CONFIG FALLBACK (if config.js not loaded e.g. on GitHub Pages) ===== */
-if(!window.DD){
-  window.DD={site:"https://decordesigno.com",phone:"+92 321 771 4820",phoneRaw:"923217714820",address:"Main Lahore Road, Chiniot, Pakistan",productsPerPage:24,catalogueSize:375};
-  const UP="https://decordesigno.com/wp-content/uploads/";
-  DD.homeCategories=[
-    ["Bedroom","bedroom",UP+"2026/10/Signature-Wooden-Bed-Elegant-Handcrafted-WB08-1-1.jpg"],
-    ["Living Room","sitting-room",UP+"2026/09/Luxury-Statement-Sofa-for-Contemporary-Living-Room-SS0022.jpeg"],
-    ["Dining Room","dining-room",UP+"2026/09/Premium-Sheesham-Dining-Table-Set-Modern-8-Seater-DT0009.jpeg"],
-    ["Cabinets & Storage","almirah",UP+"2025/08/Crockery-Showcase-Designs-in-Pakistan-Wooden-Modern-Cabinets-decor-designo-furniture4.png"],
-    ["Swings & Jhoolas","swing-jholla",UP+"2026/08/Large-Wooden-Swing-Chinioti-Family-Swing.png"],
-    ["Baby Furniture","baby-cart",UP+"2025/04/Buy-Luxury-Wooden-Baby-Cot-in-Pakistan-Decor-Designo-furniture-1.png"]
-  ];
-  const catCounts={"bedroom":45,"sitting-room":38,"dining-room":32,"almirah":28,"swing-jholla":15,"baby-cart":12};
-  DD.homeCategories.forEach(c=>c.push(catCounts[c[1]]||10));
-  DD.backupProducts=[
-    [6930,"Luxury Signature Wooden Bed Elegant Handcrafted WB08","signature-wooden-bed-wb08","Bed Set","bedroom-set",1475,1650,UP+"2026/10/Signature-Wooden-Bed-Elegant-Handcrafted-WB08-1-1.jpg"],
-    [6923,"Luxury Murphy Bed Ultimate Space-Saving Wall Bed MB01","murphy-bed","Bed Set","bedroom-set",3408,3505,UP+"2026/09/Premium-Murphy-Bed-Elegant-Space-Saving-Wall-Bed-1.jpg"],
-    [6918,"Amazing Premium Sheesham Dining Table Set Luxury 8-Seater","premium-sheesham-dining-set","Dining Set","dining-set",3689,3784,UP+"2026/09/Premium-Sheesham-Dining-Table-Set-Modern-8-Seater-DT0009.jpeg"],
-    [6897,"Luxury Statement Sofa for Contemporary Living Room SS002","luxury-statement-sofa-ss002","Sofa Set","sofa-set",null,null,UP+"2026/09/Luxury-Statement-Sofa-for-Contemporary-Living-Room-SS0022-300x300.jpeg"],
-    [6885,"Solid Wood Accent Chair for Bedroom C004","solid-wood-accent-chair-c004","Bedroom Chairs","bedroom-chairs",null,null,UP+"2026/09/Elegant-Solid-Wood-Accent-Chair-for-Bedroom-C004-Handcrafted-Furniture-e1788294869226-300x300.jpg"],
-    [6870,"Wooden Dining Table Set of 8 Luxury DT006","wooden-dining-table-set","Dining Set","dining-set",null,null,UP+"2026/08/Wooden-Dining-Table-Set-of-8-Luxury-DT006-300x300.jpeg"],
-    [6861,"Solid Wood Canopy Bed Luxury Four Poster Design","solid-wood-canopy-bed","Bed Set","bedroom-set",null,null,UP+"2026/08/Solid-Wood-Canopy-Bed-Luxury-Four-Poster-Design-300x300.jpg"],
-    [6816,"Chinioti Dining Table Gold Carved Luxury Design","chinioti-dining-table","Dining Set","dining-set",null,null,UP+"2026/08/Chinioti-Dining-Table-Gold-Carved-Luxury-Design-300x300.png"]
-  ].map(r=>({id:r[0],name:r[1],slug:r[2],permalink:`https://decordesigno.com/product/${r[2]}/`,categories:[{name:r[3],slug:r[4]}],price:r[5],regular:r[6],image:r[7],backup:true}));
-}
-
-/* ===== CATEGORY GRID ===== */
+/* ── SCROLL REVEAL ── */
 (function(){
-  const catCounts={"bedroom":45,"sitting-room":38,"dining-room":32,"almirah":28,"swing-jholla":15,"baby-cart":12};
-  const grid=document.getElementById('catGrid');
-  if(!grid)return;
-  (DD.homeCategories||[]).forEach(([title,slug,img])=>{
-    const count=catCounts[slug]||10;
-    const a=document.createElement('a');
-    a.className='cat-tile';
-    a.href=`shop.html?cat=${slug}`;
-    a.innerHTML=`<img src="${img}" alt="${title} furniture" loading="lazy"><div class="cat-tile-overlay"></div><div class="cat-tile-info"><strong>${title}</strong><span>${count} items</span></div>`;
-    grid.appendChild(a);
-  });
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('vis'); io.unobserve(e.target); }});
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 })();
 
-/* ===== BESTSELLERS ===== */
+/* ── DRAWER ── */
 (function(){
-  const grid=document.getElementById('bestGrid');
-  if(!grid)return;
-  const badges=['sale','','out',''];
-  const badgeLabels=['SALE','','Out of stock',''];
-  const products=(DD.backupProducts||[]).slice(0,4);
-  products.forEach((p,i)=>{
-    const badge=badges[i];
-    const badgeHtml=badge==='sale'?`<span class="product-badge badge-sale">SALE</span>`:badge==='out'?`<span class="product-badge badge-out">Out of stock</span>`:'';
-    const priceHtml=p.price?`<div class="product-price">$${p.price.toLocaleString()}${p.regular?`<span class="old">$${p.regular.toLocaleString()}</span>`:''}</div>`:`<div class="product-price contact">Contact for price</div>`;
-    const cat=(p.categories&&p.categories[0])?p.categories[0].name:'Furniture';
-    const card=document.createElement('div');
-    card.className='product-card';
-    card.innerHTML=`<div class="product-thumb">${badgeHtml}<img src="${p.image}" alt="${p.name}" loading="lazy"></div><div class="product-info"><div class="product-cat">${cat}</div><div class="product-name">${p.name}</div>${priceHtml}</div><a class="product-link" href="${p.permalink}" target="_blank" rel="noopener">View Product</a>`;
-    grid.appendChild(card);
-  });
-})();
-
-/* ===== HERO BG ===== */
-(function(){
-  const bg=document.getElementById('heroBg');
-  if(!bg)return;
-  const img=new Image();
-  img.onload=()=>bg.classList.add('loaded');
-  img.src='https://decordesigno.com/wp-content/uploads/2026/04/Luxury-Royal-Sofa-Set-Design-in-Pakistan-Majestic-Chinioti-Modern-Sofa-2025decor-designo.png';
-  setTimeout(()=>bg.classList.add('loaded'),3000);
-})();
-
-/* ===== SCROLL REVEAL ===== */
-(function(){
-  const obs=new IntersectionObserver(entries=>{
-    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}});
-  },{threshold:.12});
-  document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
-})();
-
-/* ===== STICKY HEADER ===== */
-(function(){
-  const h=document.getElementById('siteHeader');
-  window.addEventListener('scroll',()=>{h.classList.toggle('scrolled',window.scrollY>60);},{passive:true});
-})();
-
-/* ===== DRAWER ===== */
-(function(){
-  const open=document.getElementById('menuOpen');
-  const close=document.getElementById('menuClose');
-  const drawer=document.getElementById('drawer');
-  const bg=document.getElementById('drawerBg');
-  function openDrawer(){drawer.classList.add('open');bg.classList.add('active');drawer.setAttribute('aria-hidden','false');open&&open.setAttribute('aria-expanded','true');document.body.style.overflow='hidden';}
-  function closeDrawer(){drawer.classList.remove('open');bg.classList.remove('active');drawer.setAttribute('aria-hidden','true');open&&open.setAttribute('aria-expanded','false');document.body.style.overflow='';}
-  open&&open.addEventListener('click',openDrawer);
-  close&&close.addEventListener('click',closeDrawer);
-  bg&&bg.addEventListener('click',closeDrawer);
-  document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDrawer();});
-})();
-
-/* ===== SEARCH TOGGLE ===== */
-(function(){
-  const btn=document.getElementById('searchToggle');
-  const bar=document.getElementById('searchBar');
-  if(!btn||!bar)return;
-  btn.addEventListener('click',()=>{
-    const open=bar.classList.toggle('open');
-    btn.setAttribute('aria-expanded',open);
-    if(open){const inp=bar.querySelector('input');inp&&inp.focus();}
-  });
+  const openBtn  = document.getElementById('menuOpen');
+  const closeBtn = document.getElementById('menuClose');
+  const drawer   = document.getElementById('drawer');
+  const bg       = document.getElementById('drawerBg');
+  function openD(){ drawer.classList.add('on'); bg.classList.add('on'); drawer.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden'; }
+  function closeD(){ drawer.classList.remove('on'); bg.classList.remove('on'); drawer.setAttribute('aria-hidden','true'); document.body.style.overflow=''; }
+  openBtn  && openBtn.addEventListener('click', openD);
+  closeBtn && closeBtn.addEventListener('click', closeD);
+  bg       && bg.addEventListener('click', closeD);
+  document.addEventListener('keydown', e => { if(e.key === 'Escape') closeD(); });
 })();
 </script>
-<script src="assets/app.js"></script>
 </body>
 </html>
