@@ -52,157 +52,191 @@ svg{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-l
 
 /* ─────────────────────────────────────────
    HERO CARD WRAPPER  (the whole rounded box)
+/* ─────────────────────────────────────────
+   HERO CARD WRAPPER  (Stylecraft Design Style)
    ───────────────────────────────────────── */
 .hero-wrap{
-  padding: 20px;
-  background: #eee9e2;
+  padding: 32px 24px;
+  background: #dfe3e8;
+  display: flex;
+  justify-content: center;
 }
 .hero-card{
   position: relative;
-  border-radius: 28px;
+  width: 100%;
+  max-width: 1220px;
+  height: 640px;
+  min-height: 580px;
+  border-radius: 44px;
   overflow: hidden;
-  min-height: 88vh;
   display: flex;
   flex-direction: column;
-  /* white border effect */
-  box-shadow: 0 0 0 6px rgba(255,255,255,.85), 0 24px 80px rgba(35,24,12,.25);
+  background: #111417;
+  border: 14px solid #ffffff;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.18);
 }
 
-/* ── Background image + dark overlay ── */
+/* ── Background image ── */
 .hero-bg{
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: center bottom;
   z-index: 0;
 }
 .hero-bg-fallback{
   position: absolute;
   inset: 0;
-  background: linear-gradient(145deg, #2a1e0e 0%, #1a120a 60%, #0e0b06 100%);
+  background: #1a1e22;
   z-index: 0;
 }
 .hero-overlay{
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(10,7,3,.55) 0%,
-    rgba(10,7,3,.30) 40%,
-    rgba(10,7,3,.55) 100%
-  );
+  background: radial-gradient(circle at center 40%, rgba(10,13,16,0.3) 0%, rgba(10,13,16,0.72) 100%);
   z-index: 1;
 }
 
-/* ── Navbar inside hero ── */
-.hero-nav{
+/* ── Top Notch Bar (Embedded White Notch Navbar) ── */
+.hero-notch-bar{
   position: relative;
   z-index: 10;
   display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0;
+}
+
+/* Left Notch (Brand Logo in white tab) */
+.hero-notch-left{
+  background: #ffffff;
+  padding: 16px 28px 18px 24px;
+  border-bottom-right-radius: 28px;
+  display: flex;
   align-items: center;
-  padding: 22px 36px;
-  gap: 20px;
+  gap: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
 }
-.hero-logo{
-  font-family: 'Playfair Display', serif;
-  font-size: 20px;
-  font-weight: 900;
+.hero-logo-mark{
+  width: 32px;
+  height: 32px;
+  background: #14171a;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #fff;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 18px;
   line-height: 1;
-  flex-shrink: 0;
-  background: rgba(255,255,255,.12);
-  padding: 10px 18px;
-  border-radius: 14px;
-  backdrop-filter: blur(6px);
-  border: 1px solid rgba(255,255,255,.18);
-  letter-spacing: -.01em;
 }
-.hero-logo small{
-  display: block;
-  font-family: 'Inter', sans-serif;
-  font-size: 8.5px;
-  font-weight: 600;
-  letter-spacing: .14em;
+.hero-logo-text{
+  display: flex;
+  flex-direction: column;
+}
+.hero-logo-text strong{
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .18em;
+  color: #14171a;
   text-transform: uppercase;
-  color: rgba(255,255,255,.55);
-  margin-top: 2px;
+  line-height: 1.1;
 }
+.hero-logo-text span{
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: .08em;
+  color: #14171a;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+
+/* Center Nav Links (Clean white minimal sans) */
 .hero-nav-links{
   display: flex;
   align-items: center;
-  gap: 4px;
-  margin-left: auto;
-  background: rgba(255,255,255,.12);
-  border: 1px solid rgba(255,255,255,.14);
-  border-radius: 100px;
-  padding: 6px 8px;
-  backdrop-filter: blur(8px);
+  gap: 36px;
+  padding-top: 22px;
 }
 .hero-nav-links a{
-  font-size: 13px;
+  font-size: 13.5px;
   font-weight: 500;
-  color: rgba(255,255,255,.82);
-  padding: 7px 16px;
-  border-radius: 100px;
-  transition: background var(--tr), color var(--tr);
-  white-space: nowrap;
+  color: rgba(255,255,255,.9);
+  letter-spacing: .02em;
+  transition: color var(--tr);
 }
 .hero-nav-links a:hover,
 .hero-nav-links a.active{
-  background: rgba(255,255,255,.18);
-  color: #fff;
+  color: #ffffff;
+  text-shadow: 0 0 12px rgba(255,255,255,.6);
 }
-.hero-nav-right{
+
+/* Right Notch (Pill actions in white tab) */
+.hero-notch-right{
+  background: #ffffff;
+  padding: 14px 20px 18px 24px;
+  border-bottom-left-radius: 28px;
   display: flex;
   align-items: center;
   gap: 8px;
-  flex-shrink: 0;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
 }
 .hero-connect-btn{
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 10px 20px;
-  border-radius: 100px;
-  background: #fff;
-  color: var(--esp);
+  background: #14171a;
+  color: #ffffff;
   font-size: 13px;
-  font-weight: 700;
-  transition: background var(--tr), color var(--tr);
+  font-weight: 600;
+  padding: 10px 22px;
+  border-radius: 100px;
+  letter-spacing: .02em;
+  transition: background var(--tr);
   white-space: nowrap;
 }
-.hero-connect-btn:hover{background: var(--sand)}
+.hero-connect-btn:hover{
+  background: #2b3036;
+}
 .hero-arrow-btn{
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
-  background: rgba(255,255,255,.15);
-  border: 1px solid rgba(255,255,255,.2);
+  background: #14171a;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
-  backdrop-filter: blur(6px);
+  color: #ffffff;
   transition: background var(--tr);
+  flex-shrink: 0;
 }
-.hero-arrow-btn:hover{background: rgba(255,255,255,.28)}
-.hero-arrow-btn svg{width: 16px; height: 16px; stroke: #fff}
+.hero-arrow-btn:hover{
+  background: #2b3036;
+}
+.hero-arrow-btn svg{
+  width: 15px;
+  height: 15px;
+  stroke: #ffffff;
+  stroke-width: 2.2;
+}
 .hero-menu-btn{
   display: none;
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
-  background: rgba(255,255,255,.15);
-  border: 1px solid rgba(255,255,255,.2);
+  background: #14171a;
   align-items: center;
   justify-content: center;
   color: #fff;
 }
-.hero-menu-btn svg{width: 18px; height: 18px; stroke: #fff}
+.hero-menu-btn svg{
+  width: 16px;
+  height: 16px;
+  stroke: #fff;
+}
 
-/* ── Hero center content ── */
+/* ── Hero Center Content (Clean Modern Typography) ── */
 .hero-body{
   flex: 1;
   display: flex;
@@ -210,54 +244,68 @@ svg{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-l
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 40px 32px 60px;
+  padding: 10px 32px 50px;
   position: relative;
   z-index: 5;
 }
 .hero-title{
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(42px, 6vw, 86px);
-  font-weight: 900;
-  color: #fff;
-  line-height: 1.06;
-  letter-spacing: -.03em;
-  max-width: 780px;
-  margin: 0 auto 18px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: clamp(34px, 4.4vw, 54px);
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.18;
+  letter-spacing: -.02em;
+  max-width: 680px;
+  margin: 0 auto 14px;
 }
-.hero-title em{font-style: italic; color: var(--sand)}
 .hero-sub{
-  font-size: 15px;
-  color: rgba(255,255,255,.62);
-  max-width: 420px;
-  margin: 0 auto 32px;
-  line-height: 1.75;
+  font-family: 'Inter', sans-serif;
+  font-size: 13.5px;
+  color: rgba(255,255,255,.75);
+  max-width: 480px;
+  margin: 0 auto 28px;
+  line-height: 1.6;
   font-weight: 400;
+  letter-spacing: .01em;
 }
+
+/* ── Coral Pill CTA Button ── */
 .hero-cta{
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  padding: 14px 30px;
+  padding: 5px 6px 5px 22px;
   border-radius: 100px;
-  background: var(--car);
-  color: #fff;
-  font-size: 15px;
-  font-weight: 700;
-  transition: background var(--tr), transform var(--tr);
-  box-shadow: 0 6px 28px rgba(122,85,53,.45);
+  background: #ff5447;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .02em;
+  transition: transform var(--tr), background var(--tr), box-shadow var(--tr);
+  box-shadow: 0 8px 24px rgba(255,84,71,.42);
 }
-.hero-cta:hover{background: #5a3d20; transform: translateY(-2px)}
+.hero-cta:hover{
+  background: #e84437;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(255,84,71,.55);
+}
 .hero-cta-icon{
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: rgba(255,255,255,.25);
+  background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
 }
-.hero-cta-icon svg{width: 14px; height: 14px; stroke: #fff}
+.hero-cta-icon svg{
+  width: 14px;
+  height: 14px;
+  stroke: #ff5447;
+  stroke-width: 2.4;
+}
 
 /* ── Bottom scroll indicator ── */
 .hero-scroll{
@@ -460,6 +508,7 @@ svg{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-l
 @media(max-width:860px){
   .hero-nav-links{display:none}
   .hero-menu-btn{display:flex}
+  .hero-card{height:auto;min-height:520px;border-width:10px;border-radius:32px}
   .prod-grid{grid-template-columns:repeat(2,1fr)}
   .cat-mosaic{grid-template-columns:1fr 1fr;grid-template-rows:260px 260px 260px}
   .cat-c1{grid-column:1;grid-row:1}
@@ -468,13 +517,14 @@ svg{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-l
   .footer-inner{grid-template-columns:1fr 1fr}
 }
 @media(max-width:620px){
-  .hero-wrap{padding:12px}
-  .hero-card{min-height:92vh;border-radius:20px;box-shadow:0 0 0 4px rgba(255,255,255,.8),0 12px 40px rgba(35,24,12,.2)}
-  .hero-nav{padding:14px 16px;gap:10px}
-  .hero-logo{font-size:15px;padding:8px 12px}
+  .hero-wrap{padding:12px 8px}
+  .hero-card{min-height:560px;height:auto;border-radius:24px;border-width:8px}
+  .hero-notch-left{padding:12px 16px;border-bottom-right-radius:18px}
+  .hero-notch-right{padding:10px 14px;border-bottom-left-radius:18px}
   .hero-connect-btn{display:none}
-  .hero-title{font-size:clamp(36px,11vw,56px)}
-  .hero-sub{font-size:14px}
+  .hero-menu-btn{display:flex}
+  .hero-title{font-size:clamp(30px,9vw,44px)}
+  .hero-sub{font-size:13px;padding:0 8px}
   .container{padding:0 18px}
   .section{padding:60px 0}
   .section-cta{padding:72px 0}
@@ -527,7 +577,7 @@ svg{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-l
 <main id="main">
 
 <!-- ══════════════════════════════════════
-     HERO — ROUNDED CARD WITH NAV INSIDE
+     HERO — ROUNDED CARD (Stylecraft Style)
      ══════════════════════════════════════ -->
 <div class="hero-wrap">
   <div class="hero-card" id="heroCard">
@@ -535,65 +585,59 @@ svg{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-l
     <!-- Fallback background (always visible) -->
     <div class="hero-bg-fallback"></div>
 
-    <!-- Background photo -->
+    <!-- Background photo (dark elegant furniture setting) -->
     <img class="hero-bg" referrerpolicy="no-referrer"
          src="https://decordesigno.com/wp-content/uploads/2026/04/Luxury-Royal-Sofa-Set-Design-in-Pakistan-Majestic-Chinioti-Modern-Sofa-2025decor-designo.png"
-         alt="Luxury Chinioti furniture">
+         alt="Modern minimalist luxury furniture">
 
-    <!-- Dark overlay -->
+    <!-- Dark vignette overlay -->
     <div class="hero-overlay"></div>
 
-    <!-- ── NAVBAR inside card ── -->
-    <nav class="hero-nav" aria-label="Main navigation">
-      <!-- Logo pill -->
-      <a class="hero-logo" href="index.html">
-        Decor Designo
-        <small>Furniture · Chiniot</small>
+    <!-- ── TOP NOTCH BAR (Embedded Navbar) ── -->
+    <header class="hero-notch-bar">
+      <!-- Left Notch: Brand Logo -->
+      <a class="hero-notch-left" href="index.html">
+        <div class="hero-logo-mark">D</div>
+        <div class="hero-logo-text">
+          <strong>DECOR DESIGNO</strong>
+          <span>FURNITURE</span>
+        </div>
       </a>
 
-      <!-- Nav links pill (desktop) -->
-      <div class="hero-nav-links">
-        <a href="index.html" class="active">Home</a>
-        <a href="shop.html">Catalogue</a>
-        <a href="shop.html?cat=bedroom">Bedroom</a>
-        <a href="shop.html?cat=sitting-room">Living Room</a>
-        <a href="shop.html?cat=dining-room">Dining</a>
-      </div>
+      <!-- Center Links (Desktop) -->
+      <nav class="hero-nav-links" aria-label="Main navigation">
+        <a href="shop.html" class="active">Shop</a>
+        <a href="shop.html?cat=sitting-room">Browser</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">FAQ</a>
+      </nav>
 
-      <!-- Right buttons -->
-      <div class="hero-nav-right">
+      <!-- Right Notch: Pill Actions -->
+      <div class="hero-notch-right">
         <a class="hero-connect-btn" href="#contact">Connect with us</a>
-        <!-- Arrow / external link button -->
-        <a class="hero-arrow-btn" href="https://decordesigno.com" target="_blank" rel="noopener" aria-label="Visit full site">
+        <a class="hero-arrow-btn" href="https://decordesigno.com" target="_blank" rel="noopener" aria-label="Visit store">
           <svg viewBox="0 0 24 24"><path d="M7 17L17 7M7 7h10v10"/></svg>
         </a>
-        <!-- Mobile hamburger -->
         <button class="hero-menu-btn" id="menuOpen" aria-label="Open menu" aria-expanded="false">
           <svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
         </button>
       </div>
-    </nav>
+    </header>
 
-    <!-- ── HERO BODY (centered text) ── -->
+    <!-- ── HERO BODY (Centered Headline & Subtitle) ── -->
     <div class="hero-body">
       <h1 class="hero-title">
-        Luxury Furniture for<br><em>Discerning</em> Homes
+        Modern Furniture for<br>Minimalist Lovers
       </h1>
       <p class="hero-sub">
-        Experience the art of Chinioti craftsmanship — handcrafted beds, sofas and dining sets made to transform your living space.
+        Experience the ultimate relaxation with our collection of serene and tranquil spa-inspired designs
       </p>
       <a class="hero-cta" href="shop.html">
-        Explore Collection
+        Explore More
         <span class="hero-cta-icon">
           <svg viewBox="0 0 24 24"><path d="M7 17L17 7M7 7h10v10"/></svg>
         </span>
       </a>
-    </div>
-
-    <!-- Scroll indicator -->
-    <div class="hero-scroll">
-      <div class="hero-scroll-line"></div>
-      <span>Scroll</span>
     </div>
 
   </div><!-- /hero-card -->
