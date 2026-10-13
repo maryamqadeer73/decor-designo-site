@@ -124,7 +124,7 @@ svg{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-l
 .hero-arrow.left{left:24px}
 .hero-arrow.right{right:24px}
 .hero-arrow svg{width:18px;height:18px}
-.hero-stats{position:absolute;bottom:32px;left:0;right:0;z-index:3;display:flex;justify-content:center;gap:48px}
+.hero-stats{display:flex;justify-content:center;gap:48px;margin-top:48px;flex-wrap:wrap}
 .hero-stat{text-align:center;color:rgba(255,255,255,.9)}
 .hero-stat b{display:block;font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#fff}
 .hero-stat span{font-size:12px;font-weight:400;color:rgba(255,255,255,.65);letter-spacing:.05em;text-transform:uppercase}
@@ -291,7 +291,7 @@ svg{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-l
   .footer-top{grid-template-columns:1fr;gap:28px}
   .bestsellers-head{flex-direction:column;align-items:flex-start;gap:12px}
   .hero-arrow{display:none}
-  .hero-stats{position:relative;bottom:auto;margin-top:36px;justify-content:flex-start;gap:32px}
+  .hero-stats{gap:24px;margin-top:32px;justify-content:center}
 }
 @media(max-width:420px){
   .cat-row{grid-template-columns:repeat(2,1fr)}
@@ -438,7 +438,7 @@ svg{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-l
       </div>
       <a class="text-link" href="shop.html">View all categories →</a>
     </div>
-    <div class="cat-row reveal" id="catGrid"></div>
+    <div class="cat-row" id="catGrid"></div>
   </div>
 </section>
 
